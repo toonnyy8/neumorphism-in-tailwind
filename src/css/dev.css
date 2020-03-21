@@ -1,4 +1,17 @@
-.shadow-func {
+
+    @variants responsive,
+group-hover,
+focus-within,
+first,
+last,
+odd,
+even,
+hover,
+focus,
+active,
+visited,
+disabled {
+    .shadow-func {
   --sf-l-color: #00000000;
   --sf-r-color: #00000000;
   --sf-t-color: #00000000;
@@ -3339,3 +3352,5 @@
 }
 
 /*# sourceMappingURL=dev.css.map */
+
+}

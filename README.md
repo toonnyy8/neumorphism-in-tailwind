@@ -143,3 +143,20 @@
   "--2xl": "15px"
 }
 ```
+
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @import url(./build/css/output.css);
+
+        div.background {
+            background: #262626;
+            height: 300px;
+            width: 300px;
+        }
+
+        div.card {
+            height: 100px;
+            width: 100px;
+            background: #262626;
+        }
+    </style>

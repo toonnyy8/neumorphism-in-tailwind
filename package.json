@@ -9,7 +9,7 @@
     "build:scss": "sass src/scss/dev.scss src/css/dev.css",
     "build:middle": "node ./src/js/index.js",
     "build:css": "tailwindcss build src/css/dev.css -o build/css/output.css",
-    "build": "npm run build:scss|npm run build:middle|npm run build:css"
+    "build": "npm run build:scss && npm run build:middle && npm run build:css"
   },
   "repository": {
     "type": "git",

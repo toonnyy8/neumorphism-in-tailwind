@@ -1,0 +1,31 @@
+{
+  "name": "neomorphism-in-tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "init": "tailwindcss init --full",
+    "build:scss": "sass src/scss/dev.scss src/css/dev.css",
+    "build:middle": "node ./src/js/index.js",
+    "build:css": "tailwindcss build src/css/dev.css -o build/css/output.css",
+    "build": "npm run build:scss|npm run build:middle|npm run build:css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/toonnyy8/neomorphism-in-tailwind.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/toonnyy8/neomorphism-in-tailwind/issues"
+  },
+  "homepage": "https://github.com/toonnyy8/neomorphism-in-tailwind#readme",
+  "dependencies": {
+    "sass": "^1.26.3",
+    "stylelint": "^13.2.1",
+    "stylelint-scss": "^3.16.0",
+    "tailwindcss": "^1.2.0"
+  }
+}

@@ -1,0 +1,1503 @@
+.shadow-func {
+    --sf-l-color: #00000000;
+    --sf-r-color: #00000000;
+    --sf-t-color: #00000000;
+    --sf-b-color: #00000000;
+    --sf-l: var(--sf-l-color) 0px 0px 0px;
+    --sf-r: var(--sf-r-color) 0px 0px 0px;
+    --sf-t: var(--sf-t-color) 0px 0px 0px;
+    --sf-b: var(--sf-b-color) 0px 0px 0px;
+    box-shadow:
+        var(--sf-l),
+        var(--sf-r),
+        var(--sf-t),
+        var(--sf-b);
+}
+
+.sf_lc--transparent {
+    --sf-l-color: theme('colors.transparent');
+}
+
+.sf_lc--black {
+    --sf-l-color: theme('colors.black');
+}
+
+.sf_lc--white {
+    --sf-l-color: theme('colors.white');
+}
+
+.sf_lc--gray-100 {
+    --sf-l-color: theme('colors.gray.100');
+}
+
+.sf_lc--gray-200 {
+    --sf-l-color: theme('colors.gray.200');
+}
+
+.sf_lc--gray-300 {
+    --sf-l-color: theme('colors.gray.300');
+}
+
+.sf_lc--gray-400 {
+    --sf-l-color: theme('colors.gray.400');
+}
+
+.sf_lc--gray-500 {
+    --sf-l-color: theme('colors.gray.500');
+}
+
+.sf_lc--gray-600 {
+    --sf-l-color: theme('colors.gray.600');
+}
+
+.sf_lc--gray-700 {
+    --sf-l-color: theme('colors.gray.700');
+}
+
+.sf_lc--gray-800 {
+    --sf-l-color: theme('colors.gray.800');
+}
+
+.sf_lc--gray-900 {
+    --sf-l-color: theme('colors.gray.900');
+}
+
+.sf_lc--red-100 {
+    --sf-l-color: theme('colors.red.100');
+}
+
+.sf_lc--red-200 {
+    --sf-l-color: theme('colors.red.200');
+}
+
+.sf_lc--red-300 {
+    --sf-l-color: theme('colors.red.300');
+}
+
+.sf_lc--red-400 {
+    --sf-l-color: theme('colors.red.400');
+}
+
+.sf_lc--red-500 {
+    --sf-l-color: theme('colors.red.500');
+}
+
+.sf_lc--red-600 {
+    --sf-l-color: theme('colors.red.600');
+}
+
+.sf_lc--red-700 {
+    --sf-l-color: theme('colors.red.700');
+}
+
+.sf_lc--red-800 {
+    --sf-l-color: theme('colors.red.800');
+}
+
+.sf_lc--red-900 {
+    --sf-l-color: theme('colors.red.900');
+}
+
+.sf_lc--orange-100 {
+    --sf-l-color: theme('colors.orange.100');
+}
+
+.sf_lc--orange-200 {
+    --sf-l-color: theme('colors.orange.200');
+}
+
+.sf_lc--orange-300 {
+    --sf-l-color: theme('colors.orange.300');
+}
+
+.sf_lc--orange-400 {
+    --sf-l-color: theme('colors.orange.400');
+}
+
+.sf_lc--orange-500 {
+    --sf-l-color: theme('colors.orange.500');
+}
+
+.sf_lc--orange-600 {
+    --sf-l-color: theme('colors.orange.600');
+}
+
+.sf_lc--orange-700 {
+    --sf-l-color: theme('colors.orange.700');
+}
+
+.sf_lc--orange-800 {
+    --sf-l-color: theme('colors.orange.800');
+}
+
+.sf_lc--orange-900 {
+    --sf-l-color: theme('colors.orange.900');
+}
+
+.sf_lc--yellow-100 {
+    --sf-l-color: theme('colors.yellow.100');
+}
+
+.sf_lc--yellow-200 {
+    --sf-l-color: theme('colors.yellow.200');
+}
+
+.sf_lc--yellow-300 {
+    --sf-l-color: theme('colors.yellow.300');
+}
+
+.sf_lc--yellow-400 {
+    --sf-l-color: theme('colors.yellow.400');
+}
+
+.sf_lc--yellow-500 {
+    --sf-l-color: theme('colors.yellow.500');
+}
+
+.sf_lc--yellow-600 {
+    --sf-l-color: theme('colors.yellow.600');
+}
+
+.sf_lc--yellow-700 {
+    --sf-l-color: theme('colors.yellow.700');
+}
+
+.sf_lc--yellow-800 {
+    --sf-l-color: theme('colors.yellow.800');
+}
+
+.sf_lc--yellow-900 {
+    --sf-l-color: theme('colors.yellow.900');
+}
+
+.sf_lc--green-100 {
+    --sf-l-color: theme('colors.green.100');
+}
+
+.sf_lc--green-200 {
+    --sf-l-color: theme('colors.green.200');
+}
+
+.sf_lc--green-300 {
+    --sf-l-color: theme('colors.green.300');
+}
+
+.sf_lc--green-400 {
+    --sf-l-color: theme('colors.green.400');
+}
+
+.sf_lc--green-500 {
+    --sf-l-color: theme('colors.green.500');
+}
+
+.sf_lc--green-600 {
+    --sf-l-color: theme('colors.green.600');
+}
+
+.sf_lc--green-700 {
+    --sf-l-color: theme('colors.green.700');
+}
+
+.sf_lc--green-800 {
+    --sf-l-color: theme('colors.green.800');
+}
+
+.sf_lc--green-900 {
+    --sf-l-color: theme('colors.green.900');
+}
+
+.sf_lc--teal-100 {
+    --sf-l-color: theme('colors.teal.100');
+}
+
+.sf_lc--teal-200 {
+    --sf-l-color: theme('colors.teal.200');
+}
+
+.sf_lc--teal-300 {
+    --sf-l-color: theme('colors.teal.300');
+}
+
+.sf_lc--teal-400 {
+    --sf-l-color: theme('colors.teal.400');
+}
+
+.sf_lc--teal-500 {
+    --sf-l-color: theme('colors.teal.500');
+}
+
+.sf_lc--teal-600 {
+    --sf-l-color: theme('colors.teal.600');
+}
+
+.sf_lc--teal-700 {
+    --sf-l-color: theme('colors.teal.700');
+}
+
+.sf_lc--teal-800 {
+    --sf-l-color: theme('colors.teal.800');
+}
+
+.sf_lc--teal-900 {
+    --sf-l-color: theme('colors.teal.900');
+}
+
+.sf_lc--blue-100 {
+    --sf-l-color: theme('colors.blue.100');
+}
+
+.sf_lc--blue-200 {
+    --sf-l-color: theme('colors.blue.200');
+}
+
+.sf_lc--blue-300 {
+    --sf-l-color: theme('colors.blue.300');
+}
+
+.sf_lc--blue-400 {
+    --sf-l-color: theme('colors.blue.400');
+}
+
+.sf_lc--blue-500 {
+    --sf-l-color: theme('colors.blue.500');
+}
+
+.sf_lc--blue-600 {
+    --sf-l-color: theme('colors.blue.600');
+}
+
+.sf_lc--blue-700 {
+    --sf-l-color: theme('colors.blue.700');
+}
+
+.sf_lc--blue-800 {
+    --sf-l-color: theme('colors.blue.800');
+}
+
+.sf_lc--blue-900 {
+    --sf-l-color: theme('colors.blue.900');
+}
+
+.sf_lc--indigo-100 {
+    --sf-l-color: theme('colors.indigo.100');
+}
+
+.sf_lc--indigo-200 {
+    --sf-l-color: theme('colors.indigo.200');
+}
+
+.sf_lc--indigo-300 {
+    --sf-l-color: theme('colors.indigo.300');
+}
+
+.sf_lc--indigo-400 {
+    --sf-l-color: theme('colors.indigo.400');
+}
+
+.sf_lc--indigo-500 {
+    --sf-l-color: theme('colors.indigo.500');
+}
+
+.sf_lc--indigo-600 {
+    --sf-l-color: theme('colors.indigo.600');
+}
+
+.sf_lc--indigo-700 {
+    --sf-l-color: theme('colors.indigo.700');
+}
+
+.sf_lc--indigo-800 {
+    --sf-l-color: theme('colors.indigo.800');
+}
+
+.sf_lc--indigo-900 {
+    --sf-l-color: theme('colors.indigo.900');
+}
+
+.sf_lc--purple-100 {
+    --sf-l-color: theme('colors.purple.100');
+}
+
+.sf_lc--purple-200 {
+    --sf-l-color: theme('colors.purple.200');
+}
+
+.sf_lc--purple-300 {
+    --sf-l-color: theme('colors.purple.300');
+}
+
+.sf_lc--purple-400 {
+    --sf-l-color: theme('colors.purple.400');
+}
+
+.sf_lc--purple-500 {
+    --sf-l-color: theme('colors.purple.500');
+}
+
+.sf_lc--purple-600 {
+    --sf-l-color: theme('colors.purple.600');
+}
+
+.sf_lc--purple-700 {
+    --sf-l-color: theme('colors.purple.700');
+}
+
+.sf_lc--purple-800 {
+    --sf-l-color: theme('colors.purple.800');
+}
+
+.sf_lc--purple-900 {
+    --sf-l-color: theme('colors.purple.900');
+}
+
+.sf_lc--pink-100 {
+    --sf-l-color: theme('colors.pink.100');
+}
+
+.sf_lc--pink-200 {
+    --sf-l-color: theme('colors.pink.200');
+}
+
+.sf_lc--pink-300 {
+    --sf-l-color: theme('colors.pink.300');
+}
+
+.sf_lc--pink-400 {
+    --sf-l-color: theme('colors.pink.400');
+}
+
+.sf_lc--pink-500 {
+    --sf-l-color: theme('colors.pink.500');
+}
+
+.sf_lc--pink-600 {
+    --sf-l-color: theme('colors.pink.600');
+}
+
+.sf_lc--pink-700 {
+    --sf-l-color: theme('colors.pink.700');
+}
+
+.sf_lc--pink-800 {
+    --sf-l-color: theme('colors.pink.800');
+}
+
+.sf_lc--pink-900 {
+    --sf-l-color: theme('colors.pink.900');
+}
+
+.sf_rc--transparent {
+    --sf-r-color: theme('colors.transparent');
+}
+
+.sf_rc--black {
+    --sf-r-color: theme('colors.black');
+}
+
+.sf_rc--white {
+    --sf-r-color: theme('colors.white');
+}
+
+.sf_rc--gray-100 {
+    --sf-r-color: theme('colors.gray.100');
+}
+
+.sf_rc--gray-200 {
+    --sf-r-color: theme('colors.gray.200');
+}
+
+.sf_rc--gray-300 {
+    --sf-r-color: theme('colors.gray.300');
+}
+
+.sf_rc--gray-400 {
+    --sf-r-color: theme('colors.gray.400');
+}
+
+.sf_rc--gray-500 {
+    --sf-r-color: theme('colors.gray.500');
+}
+
+.sf_rc--gray-600 {
+    --sf-r-color: theme('colors.gray.600');
+}
+
+.sf_rc--gray-700 {
+    --sf-r-color: theme('colors.gray.700');
+}
+
+.sf_rc--gray-800 {
+    --sf-r-color: theme('colors.gray.800');
+}
+
+.sf_rc--gray-900 {
+    --sf-r-color: theme('colors.gray.900');
+}
+
+.sf_rc--red-100 {
+    --sf-r-color: theme('colors.red.100');
+}
+
+.sf_rc--red-200 {
+    --sf-r-color: theme('colors.red.200');
+}
+
+.sf_rc--red-300 {
+    --sf-r-color: theme('colors.red.300');
+}
+
+.sf_rc--red-400 {
+    --sf-r-color: theme('colors.red.400');
+}
+
+.sf_rc--red-500 {
+    --sf-r-color: theme('colors.red.500');
+}
+
+.sf_rc--red-600 {
+    --sf-r-color: theme('colors.red.600');
+}
+
+.sf_rc--red-700 {
+    --sf-r-color: theme('colors.red.700');
+}
+
+.sf_rc--red-800 {
+    --sf-r-color: theme('colors.red.800');
+}
+
+.sf_rc--red-900 {
+    --sf-r-color: theme('colors.red.900');
+}
+
+.sf_rc--orange-100 {
+    --sf-r-color: theme('colors.orange.100');
+}
+
+.sf_rc--orange-200 {
+    --sf-r-color: theme('colors.orange.200');
+}
+
+.sf_rc--orange-300 {
+    --sf-r-color: theme('colors.orange.300');
+}
+
+.sf_rc--orange-400 {
+    --sf-r-color: theme('colors.orange.400');
+}
+
+.sf_rc--orange-500 {
+    --sf-r-color: theme('colors.orange.500');
+}
+
+.sf_rc--orange-600 {
+    --sf-r-color: theme('colors.orange.600');
+}
+
+.sf_rc--orange-700 {
+    --sf-r-color: theme('colors.orange.700');
+}
+
+.sf_rc--orange-800 {
+    --sf-r-color: theme('colors.orange.800');
+}
+
+.sf_rc--orange-900 {
+    --sf-r-color: theme('colors.orange.900');
+}
+
+.sf_rc--yellow-100 {
+    --sf-r-color: theme('colors.yellow.100');
+}
+
+.sf_rc--yellow-200 {
+    --sf-r-color: theme('colors.yellow.200');
+}
+
+.sf_rc--yellow-300 {
+    --sf-r-color: theme('colors.yellow.300');
+}
+
+.sf_rc--yellow-400 {
+    --sf-r-color: theme('colors.yellow.400');
+}
+
+.sf_rc--yellow-500 {
+    --sf-r-color: theme('colors.yellow.500');
+}
+
+.sf_rc--yellow-600 {
+    --sf-r-color: theme('colors.yellow.600');
+}
+
+.sf_rc--yellow-700 {
+    --sf-r-color: theme('colors.yellow.700');
+}
+
+.sf_rc--yellow-800 {
+    --sf-r-color: theme('colors.yellow.800');
+}
+
+.sf_rc--yellow-900 {
+    --sf-r-color: theme('colors.yellow.900');
+}
+
+.sf_rc--green-100 {
+    --sf-r-color: theme('colors.green.100');
+}
+
+.sf_rc--green-200 {
+    --sf-r-color: theme('colors.green.200');
+}
+
+.sf_rc--green-300 {
+    --sf-r-color: theme('colors.green.300');
+}
+
+.sf_rc--green-400 {
+    --sf-r-color: theme('colors.green.400');
+}
+
+.sf_rc--green-500 {
+    --sf-r-color: theme('colors.green.500');
+}
+
+.sf_rc--green-600 {
+    --sf-r-color: theme('colors.green.600');
+}
+
+.sf_rc--green-700 {
+    --sf-r-color: theme('colors.green.700');
+}
+
+.sf_rc--green-800 {
+    --sf-r-color: theme('colors.green.800');
+}
+
+.sf_rc--green-900 {
+    --sf-r-color: theme('colors.green.900');
+}
+
+.sf_rc--teal-100 {
+    --sf-r-color: theme('colors.teal.100');
+}
+
+.sf_rc--teal-200 {
+    --sf-r-color: theme('colors.teal.200');
+}
+
+.sf_rc--teal-300 {
+    --sf-r-color: theme('colors.teal.300');
+}
+
+.sf_rc--teal-400 {
+    --sf-r-color: theme('colors.teal.400');
+}
+
+.sf_rc--teal-500 {
+    --sf-r-color: theme('colors.teal.500');
+}
+
+.sf_rc--teal-600 {
+    --sf-r-color: theme('colors.teal.600');
+}
+
+.sf_rc--teal-700 {
+    --sf-r-color: theme('colors.teal.700');
+}
+
+.sf_rc--teal-800 {
+    --sf-r-color: theme('colors.teal.800');
+}
+
+.sf_rc--teal-900 {
+    --sf-r-color: theme('colors.teal.900');
+}
+
+.sf_rc--blue-100 {
+    --sf-r-color: theme('colors.blue.100');
+}
+
+.sf_rc--blue-200 {
+    --sf-r-color: theme('colors.blue.200');
+}
+
+.sf_rc--blue-300 {
+    --sf-r-color: theme('colors.blue.300');
+}
+
+.sf_rc--blue-400 {
+    --sf-r-color: theme('colors.blue.400');
+}
+
+.sf_rc--blue-500 {
+    --sf-r-color: theme('colors.blue.500');
+}
+
+.sf_rc--blue-600 {
+    --sf-r-color: theme('colors.blue.600');
+}
+
+.sf_rc--blue-700 {
+    --sf-r-color: theme('colors.blue.700');
+}
+
+.sf_rc--blue-800 {
+    --sf-r-color: theme('colors.blue.800');
+}
+
+.sf_rc--blue-900 {
+    --sf-r-color: theme('colors.blue.900');
+}
+
+.sf_rc--indigo-100 {
+    --sf-r-color: theme('colors.indigo.100');
+}
+
+.sf_rc--indigo-200 {
+    --sf-r-color: theme('colors.indigo.200');
+}
+
+.sf_rc--indigo-300 {
+    --sf-r-color: theme('colors.indigo.300');
+}
+
+.sf_rc--indigo-400 {
+    --sf-r-color: theme('colors.indigo.400');
+}
+
+.sf_rc--indigo-500 {
+    --sf-r-color: theme('colors.indigo.500');
+}
+
+.sf_rc--indigo-600 {
+    --sf-r-color: theme('colors.indigo.600');
+}
+
+.sf_rc--indigo-700 {
+    --sf-r-color: theme('colors.indigo.700');
+}
+
+.sf_rc--indigo-800 {
+    --sf-r-color: theme('colors.indigo.800');
+}
+
+.sf_rc--indigo-900 {
+    --sf-r-color: theme('colors.indigo.900');
+}
+
+.sf_rc--purple-100 {
+    --sf-r-color: theme('colors.purple.100');
+}
+
+.sf_rc--purple-200 {
+    --sf-r-color: theme('colors.purple.200');
+}
+
+.sf_rc--purple-300 {
+    --sf-r-color: theme('colors.purple.300');
+}
+
+.sf_rc--purple-400 {
+    --sf-r-color: theme('colors.purple.400');
+}
+
+.sf_rc--purple-500 {
+    --sf-r-color: theme('colors.purple.500');
+}
+
+.sf_rc--purple-600 {
+    --sf-r-color: theme('colors.purple.600');
+}
+
+.sf_rc--purple-700 {
+    --sf-r-color: theme('colors.purple.700');
+}
+
+.sf_rc--purple-800 {
+    --sf-r-color: theme('colors.purple.800');
+}
+
+.sf_rc--purple-900 {
+    --sf-r-color: theme('colors.purple.900');
+}
+
+.sf_rc--pink-100 {
+    --sf-r-color: theme('colors.pink.100');
+}
+
+.sf_rc--pink-200 {
+    --sf-r-color: theme('colors.pink.200');
+}
+
+.sf_rc--pink-300 {
+    --sf-r-color: theme('colors.pink.300');
+}
+
+.sf_rc--pink-400 {
+    --sf-r-color: theme('colors.pink.400');
+}
+
+.sf_rc--pink-500 {
+    --sf-r-color: theme('colors.pink.500');
+}
+
+.sf_rc--pink-600 {
+    --sf-r-color: theme('colors.pink.600');
+}
+
+.sf_rc--pink-700 {
+    --sf-r-color: theme('colors.pink.700');
+}
+
+.sf_rc--pink-800 {
+    --sf-r-color: theme('colors.pink.800');
+}
+
+.sf_rc--pink-900 {
+    --sf-r-color: theme('colors.pink.900');
+}
+
+.sf_tc--transparent {
+    --sf-t-color: theme('colors.transparent');
+}
+
+.sf_tc--black {
+    --sf-t-color: theme('colors.black');
+}
+
+.sf_tc--white {
+    --sf-t-color: theme('colors.white');
+}
+
+.sf_tc--gray-100 {
+    --sf-t-color: theme('colors.gray.100');
+}
+
+.sf_tc--gray-200 {
+    --sf-t-color: theme('colors.gray.200');
+}
+
+.sf_tc--gray-300 {
+    --sf-t-color: theme('colors.gray.300');
+}
+
+.sf_tc--gray-400 {
+    --sf-t-color: theme('colors.gray.400');
+}
+
+.sf_tc--gray-500 {
+    --sf-t-color: theme('colors.gray.500');
+}
+
+.sf_tc--gray-600 {
+    --sf-t-color: theme('colors.gray.600');
+}
+
+.sf_tc--gray-700 {
+    --sf-t-color: theme('colors.gray.700');
+}
+
+.sf_tc--gray-800 {
+    --sf-t-color: theme('colors.gray.800');
+}
+
+.sf_tc--gray-900 {
+    --sf-t-color: theme('colors.gray.900');
+}
+
+.sf_tc--red-100 {
+    --sf-t-color: theme('colors.red.100');
+}
+
+.sf_tc--red-200 {
+    --sf-t-color: theme('colors.red.200');
+}
+
+.sf_tc--red-300 {
+    --sf-t-color: theme('colors.red.300');
+}
+
+.sf_tc--red-400 {
+    --sf-t-color: theme('colors.red.400');
+}
+
+.sf_tc--red-500 {
+    --sf-t-color: theme('colors.red.500');
+}
+
+.sf_tc--red-600 {
+    --sf-t-color: theme('colors.red.600');
+}
+
+.sf_tc--red-700 {
+    --sf-t-color: theme('colors.red.700');
+}
+
+.sf_tc--red-800 {
+    --sf-t-color: theme('colors.red.800');
+}
+
+.sf_tc--red-900 {
+    --sf-t-color: theme('colors.red.900');
+}
+
+.sf_tc--orange-100 {
+    --sf-t-color: theme('colors.orange.100');
+}
+
+.sf_tc--orange-200 {
+    --sf-t-color: theme('colors.orange.200');
+}
+
+.sf_tc--orange-300 {
+    --sf-t-color: theme('colors.orange.300');
+}
+
+.sf_tc--orange-400 {
+    --sf-t-color: theme('colors.orange.400');
+}
+
+.sf_tc--orange-500 {
+    --sf-t-color: theme('colors.orange.500');
+}
+
+.sf_tc--orange-600 {
+    --sf-t-color: theme('colors.orange.600');
+}
+
+.sf_tc--orange-700 {
+    --sf-t-color: theme('colors.orange.700');
+}
+
+.sf_tc--orange-800 {
+    --sf-t-color: theme('colors.orange.800');
+}
+
+.sf_tc--orange-900 {
+    --sf-t-color: theme('colors.orange.900');
+}
+
+.sf_tc--yellow-100 {
+    --sf-t-color: theme('colors.yellow.100');
+}
+
+.sf_tc--yellow-200 {
+    --sf-t-color: theme('colors.yellow.200');
+}
+
+.sf_tc--yellow-300 {
+    --sf-t-color: theme('colors.yellow.300');
+}
+
+.sf_tc--yellow-400 {
+    --sf-t-color: theme('colors.yellow.400');
+}
+
+.sf_tc--yellow-500 {
+    --sf-t-color: theme('colors.yellow.500');
+}
+
+.sf_tc--yellow-600 {
+    --sf-t-color: theme('colors.yellow.600');
+}
+
+.sf_tc--yellow-700 {
+    --sf-t-color: theme('colors.yellow.700');
+}
+
+.sf_tc--yellow-800 {
+    --sf-t-color: theme('colors.yellow.800');
+}
+
+.sf_tc--yellow-900 {
+    --sf-t-color: theme('colors.yellow.900');
+}
+
+.sf_tc--green-100 {
+    --sf-t-color: theme('colors.green.100');
+}
+
+.sf_tc--green-200 {
+    --sf-t-color: theme('colors.green.200');
+}
+
+.sf_tc--green-300 {
+    --sf-t-color: theme('colors.green.300');
+}
+
+.sf_tc--green-400 {
+    --sf-t-color: theme('colors.green.400');
+}
+
+.sf_tc--green-500 {
+    --sf-t-color: theme('colors.green.500');
+}
+
+.sf_tc--green-600 {
+    --sf-t-color: theme('colors.green.600');
+}
+
+.sf_tc--green-700 {
+    --sf-t-color: theme('colors.green.700');
+}
+
+.sf_tc--green-800 {
+    --sf-t-color: theme('colors.green.800');
+}
+
+.sf_tc--green-900 {
+    --sf-t-color: theme('colors.green.900');
+}
+
+.sf_tc--teal-100 {
+    --sf-t-color: theme('colors.teal.100');
+}
+
+.sf_tc--teal-200 {
+    --sf-t-color: theme('colors.teal.200');
+}
+
+.sf_tc--teal-300 {
+    --sf-t-color: theme('colors.teal.300');
+}
+
+.sf_tc--teal-400 {
+    --sf-t-color: theme('colors.teal.400');
+}
+
+.sf_tc--teal-500 {
+    --sf-t-color: theme('colors.teal.500');
+}
+
+.sf_tc--teal-600 {
+    --sf-t-color: theme('colors.teal.600');
+}
+
+.sf_tc--teal-700 {
+    --sf-t-color: theme('colors.teal.700');
+}
+
+.sf_tc--teal-800 {
+    --sf-t-color: theme('colors.teal.800');
+}
+
+.sf_tc--teal-900 {
+    --sf-t-color: theme('colors.teal.900');
+}
+
+.sf_tc--blue-100 {
+    --sf-t-color: theme('colors.blue.100');
+}
+
+.sf_tc--blue-200 {
+    --sf-t-color: theme('colors.blue.200');
+}
+
+.sf_tc--blue-300 {
+    --sf-t-color: theme('colors.blue.300');
+}
+
+.sf_tc--blue-400 {
+    --sf-t-color: theme('colors.blue.400');
+}
+
+.sf_tc--blue-500 {
+    --sf-t-color: theme('colors.blue.500');
+}
+
+.sf_tc--blue-600 {
+    --sf-t-color: theme('colors.blue.600');
+}
+
+.sf_tc--blue-700 {
+    --sf-t-color: theme('colors.blue.700');
+}
+
+.sf_tc--blue-800 {
+    --sf-t-color: theme('colors.blue.800');
+}
+
+.sf_tc--blue-900 {
+    --sf-t-color: theme('colors.blue.900');
+}
+
+.sf_tc--indigo-100 {
+    --sf-t-color: theme('colors.indigo.100');
+}
+
+.sf_tc--indigo-200 {
+    --sf-t-color: theme('colors.indigo.200');
+}
+
+.sf_tc--indigo-300 {
+    --sf-t-color: theme('colors.indigo.300');
+}
+
+.sf_tc--indigo-400 {
+    --sf-t-color: theme('colors.indigo.400');
+}
+
+.sf_tc--indigo-500 {
+    --sf-t-color: theme('colors.indigo.500');
+}
+
+.sf_tc--indigo-600 {
+    --sf-t-color: theme('colors.indigo.600');
+}
+
+.sf_tc--indigo-700 {
+    --sf-t-color: theme('colors.indigo.700');
+}
+
+.sf_tc--indigo-800 {
+    --sf-t-color: theme('colors.indigo.800');
+}
+
+.sf_tc--indigo-900 {
+    --sf-t-color: theme('colors.indigo.900');
+}
+
+.sf_tc--purple-100 {
+    --sf-t-color: theme('colors.purple.100');
+}
+
+.sf_tc--purple-200 {
+    --sf-t-color: theme('colors.purple.200');
+}
+
+.sf_tc--purple-300 {
+    --sf-t-color: theme('colors.purple.300');
+}
+
+.sf_tc--purple-400 {
+    --sf-t-color: theme('colors.purple.400');
+}
+
+.sf_tc--purple-500 {
+    --sf-t-color: theme('colors.purple.500');
+}
+
+.sf_tc--purple-600 {
+    --sf-t-color: theme('colors.purple.600');
+}
+
+.sf_tc--purple-700 {
+    --sf-t-color: theme('colors.purple.700');
+}
+
+.sf_tc--purple-800 {
+    --sf-t-color: theme('colors.purple.800');
+}
+
+.sf_tc--purple-900 {
+    --sf-t-color: theme('colors.purple.900');
+}
+
+.sf_tc--pink-100 {
+    --sf-t-color: theme('colors.pink.100');
+}
+
+.sf_tc--pink-200 {
+    --sf-t-color: theme('colors.pink.200');
+}
+
+.sf_tc--pink-300 {
+    --sf-t-color: theme('colors.pink.300');
+}
+
+.sf_tc--pink-400 {
+    --sf-t-color: theme('colors.pink.400');
+}
+
+.sf_tc--pink-500 {
+    --sf-t-color: theme('colors.pink.500');
+}
+
+.sf_tc--pink-600 {
+    --sf-t-color: theme('colors.pink.600');
+}
+
+.sf_tc--pink-700 {
+    --sf-t-color: theme('colors.pink.700');
+}
+
+.sf_tc--pink-800 {
+    --sf-t-color: theme('colors.pink.800');
+}
+
+.sf_tc--pink-900 {
+    --sf-t-color: theme('colors.pink.900');
+}
+
+.sf_bc--transparent {
+    --sf-b-color: theme('colors.transparent');
+}
+
+.sf_bc--black {
+    --sf-b-color: theme('colors.black');
+}
+
+.sf_bc--white {
+    --sf-b-color: theme('colors.white');
+}
+
+.sf_bc--gray-100 {
+    --sf-b-color: theme('colors.gray.100');
+}
+
+.sf_bc--gray-200 {
+    --sf-b-color: theme('colors.gray.200');
+}
+
+.sf_bc--gray-300 {
+    --sf-b-color: theme('colors.gray.300');
+}
+
+.sf_bc--gray-400 {
+    --sf-b-color: theme('colors.gray.400');
+}
+
+.sf_bc--gray-500 {
+    --sf-b-color: theme('colors.gray.500');
+}
+
+.sf_bc--gray-600 {
+    --sf-b-color: theme('colors.gray.600');
+}
+
+.sf_bc--gray-700 {
+    --sf-b-color: theme('colors.gray.700');
+}
+
+.sf_bc--gray-800 {
+    --sf-b-color: theme('colors.gray.800');
+}
+
+.sf_bc--gray-900 {
+    --sf-b-color: theme('colors.gray.900');
+}
+
+.sf_bc--red-100 {
+    --sf-b-color: theme('colors.red.100');
+}
+
+.sf_bc--red-200 {
+    --sf-b-color: theme('colors.red.200');
+}
+
+.sf_bc--red-300 {
+    --sf-b-color: theme('colors.red.300');
+}
+
+.sf_bc--red-400 {
+    --sf-b-color: theme('colors.red.400');
+}
+
+.sf_bc--red-500 {
+    --sf-b-color: theme('colors.red.500');
+}
+
+.sf_bc--red-600 {
+    --sf-b-color: theme('colors.red.600');
+}
+
+.sf_bc--red-700 {
+    --sf-b-color: theme('colors.red.700');
+}
+
+.sf_bc--red-800 {
+    --sf-b-color: theme('colors.red.800');
+}
+
+.sf_bc--red-900 {
+    --sf-b-color: theme('colors.red.900');
+}
+
+.sf_bc--orange-100 {
+    --sf-b-color: theme('colors.orange.100');
+}
+
+.sf_bc--orange-200 {
+    --sf-b-color: theme('colors.orange.200');
+}
+
+.sf_bc--orange-300 {
+    --sf-b-color: theme('colors.orange.300');
+}
+
+.sf_bc--orange-400 {
+    --sf-b-color: theme('colors.orange.400');
+}
+
+.sf_bc--orange-500 {
+    --sf-b-color: theme('colors.orange.500');
+}
+
+.sf_bc--orange-600 {
+    --sf-b-color: theme('colors.orange.600');
+}
+
+.sf_bc--orange-700 {
+    --sf-b-color: theme('colors.orange.700');
+}
+
+.sf_bc--orange-800 {
+    --sf-b-color: theme('colors.orange.800');
+}
+
+.sf_bc--orange-900 {
+    --sf-b-color: theme('colors.orange.900');
+}
+
+.sf_bc--yellow-100 {
+    --sf-b-color: theme('colors.yellow.100');
+}
+
+.sf_bc--yellow-200 {
+    --sf-b-color: theme('colors.yellow.200');
+}
+
+.sf_bc--yellow-300 {
+    --sf-b-color: theme('colors.yellow.300');
+}
+
+.sf_bc--yellow-400 {
+    --sf-b-color: theme('colors.yellow.400');
+}
+
+.sf_bc--yellow-500 {
+    --sf-b-color: theme('colors.yellow.500');
+}
+
+.sf_bc--yellow-600 {
+    --sf-b-color: theme('colors.yellow.600');
+}
+
+.sf_bc--yellow-700 {
+    --sf-b-color: theme('colors.yellow.700');
+}
+
+.sf_bc--yellow-800 {
+    --sf-b-color: theme('colors.yellow.800');
+}
+
+.sf_bc--yellow-900 {
+    --sf-b-color: theme('colors.yellow.900');
+}
+
+.sf_bc--green-100 {
+    --sf-b-color: theme('colors.green.100');
+}
+
+.sf_bc--green-200 {
+    --sf-b-color: theme('colors.green.200');
+}
+
+.sf_bc--green-300 {
+    --sf-b-color: theme('colors.green.300');
+}
+
+.sf_bc--green-400 {
+    --sf-b-color: theme('colors.green.400');
+}
+
+.sf_bc--green-500 {
+    --sf-b-color: theme('colors.green.500');
+}
+
+.sf_bc--green-600 {
+    --sf-b-color: theme('colors.green.600');
+}
+
+.sf_bc--green-700 {
+    --sf-b-color: theme('colors.green.700');
+}
+
+.sf_bc--green-800 {
+    --sf-b-color: theme('colors.green.800');
+}
+
+.sf_bc--green-900 {
+    --sf-b-color: theme('colors.green.900');
+}
+
+.sf_bc--teal-100 {
+    --sf-b-color: theme('colors.teal.100');
+}
+
+.sf_bc--teal-200 {
+    --sf-b-color: theme('colors.teal.200');
+}
+
+.sf_bc--teal-300 {
+    --sf-b-color: theme('colors.teal.300');
+}
+
+.sf_bc--teal-400 {
+    --sf-b-color: theme('colors.teal.400');
+}
+
+.sf_bc--teal-500 {
+    --sf-b-color: theme('colors.teal.500');
+}
+
+.sf_bc--teal-600 {
+    --sf-b-color: theme('colors.teal.600');
+}
+
+.sf_bc--teal-700 {
+    --sf-b-color: theme('colors.teal.700');
+}
+
+.sf_bc--teal-800 {
+    --sf-b-color: theme('colors.teal.800');
+}
+
+.sf_bc--teal-900 {
+    --sf-b-color: theme('colors.teal.900');
+}
+
+.sf_bc--blue-100 {
+    --sf-b-color: theme('colors.blue.100');
+}
+
+.sf_bc--blue-200 {
+    --sf-b-color: theme('colors.blue.200');
+}
+
+.sf_bc--blue-300 {
+    --sf-b-color: theme('colors.blue.300');
+}
+
+.sf_bc--blue-400 {
+    --sf-b-color: theme('colors.blue.400');
+}
+
+.sf_bc--blue-500 {
+    --sf-b-color: theme('colors.blue.500');
+}
+
+.sf_bc--blue-600 {
+    --sf-b-color: theme('colors.blue.600');
+}
+
+.sf_bc--blue-700 {
+    --sf-b-color: theme('colors.blue.700');
+}
+
+.sf_bc--blue-800 {
+    --sf-b-color: theme('colors.blue.800');
+}
+
+.sf_bc--blue-900 {
+    --sf-b-color: theme('colors.blue.900');
+}
+
+.sf_bc--indigo-100 {
+    --sf-b-color: theme('colors.indigo.100');
+}
+
+.sf_bc--indigo-200 {
+    --sf-b-color: theme('colors.indigo.200');
+}
+
+.sf_bc--indigo-300 {
+    --sf-b-color: theme('colors.indigo.300');
+}
+
+.sf_bc--indigo-400 {
+    --sf-b-color: theme('colors.indigo.400');
+}
+
+.sf_bc--indigo-500 {
+    --sf-b-color: theme('colors.indigo.500');
+}
+
+.sf_bc--indigo-600 {
+    --sf-b-color: theme('colors.indigo.600');
+}
+
+.sf_bc--indigo-700 {
+    --sf-b-color: theme('colors.indigo.700');
+}
+
+.sf_bc--indigo-800 {
+    --sf-b-color: theme('colors.indigo.800');
+}
+
+.sf_bc--indigo-900 {
+    --sf-b-color: theme('colors.indigo.900');
+}
+
+.sf_bc--purple-100 {
+    --sf-b-color: theme('colors.purple.100');
+}
+
+.sf_bc--purple-200 {
+    --sf-b-color: theme('colors.purple.200');
+}
+
+.sf_bc--purple-300 {
+    --sf-b-color: theme('colors.purple.300');
+}
+
+.sf_bc--purple-400 {
+    --sf-b-color: theme('colors.purple.400');
+}
+
+.sf_bc--purple-500 {
+    --sf-b-color: theme('colors.purple.500');
+}
+
+.sf_bc--purple-600 {
+    --sf-b-color: theme('colors.purple.600');
+}
+
+.sf_bc--purple-700 {
+    --sf-b-color: theme('colors.purple.700');
+}
+
+.sf_bc--purple-800 {
+    --sf-b-color: theme('colors.purple.800');
+}
+
+.sf_bc--purple-900 {
+    --sf-b-color: theme('colors.purple.900');
+}
+
+.sf_bc--pink-100 {
+    --sf-b-color: theme('colors.pink.100');
+}
+
+.sf_bc--pink-200 {
+    --sf-b-color: theme('colors.pink.200');
+}
+
+.sf_bc--pink-300 {
+    --sf-b-color: theme('colors.pink.300');
+}
+
+.sf_bc--pink-400 {
+    --sf-b-color: theme('colors.pink.400');
+}
+
+.sf_bc--pink-500 {
+    --sf-b-color: theme('colors.pink.500');
+}
+
+.sf_bc--pink-600 {
+    --sf-b-color: theme('colors.pink.600');
+}
+
+.sf_bc--pink-700 {
+    --sf-b-color: theme('colors.pink.700');
+}
+
+.sf_bc--pink-800 {
+    --sf-b-color: theme('colors.pink.800');
+}
+
+.sf_bc--pink-900 {
+    --sf-b-color: theme('colors.pink.900');
+}

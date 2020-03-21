@@ -1,0 +1,219 @@
+.shadow-func {
+  --sf-l-color: #00000000;
+  --sf-r-color: #00000000;
+  --sf-t-color: #00000000;
+  --sf-b-color: #00000000;
+  --sf-l-inner: ;
+  --sf-r-inner: ;
+  --sf-t-inner: ;
+  --sf-b-inner: ;
+  --sf-l: var(--sf-l-inner) 0px 0px 0px var(--sf-l-color);
+  --sf-r: var(--sf-r-inner) 0px 0px 0px var(--sf-r-color);
+  --sf-t: var(--sf-t-inner) 0px 0px 0px var(--sf-t-color);
+  --sf-b: var(--sf-b-inner) 0px 0px 0px var(--sf-b-color);
+  box-shadow: var(--sf-l), var(--sf-t), var(--sf-r), var(--sf-b);
+}
+
+$sizes: ("--xs": 1px,
+  "--sm": 3px,
+  "": 5px,
+  "--md": 7px,
+  "--lg": 9px,
+  "--xl": 12px,
+  "--2xl": 15px);
+
+@each $size,
+$num in $sizes {
+  .sf_l#{$size} {
+    --sf-l-color: theme("colors.black");
+    --sf-l-inner: ;
+    --sf-l: var(--sf-l-inner) -#{$num} 0px calc(#{$num} * 2) var(--sf-l-color);
+  }
+}
+
+@each $size,
+$num in $sizes {
+  .sf_r#{$size} {
+    --sf-r-color: theme("colors.black");
+    --sf-r-inner: ;
+    --sf-r: var(--sf-r-inner) #{$num} 0px calc(#{$num} * 2) var(--sf-r-color);
+  }
+}
+
+@each $size,
+$num in $sizes {
+  .sf_t#{$size} {
+    --sf-t-color: theme("colors.black");
+    --sf-t-inner: ;
+    --sf-t: var(--sf-t-inner) 0px -#{$num} calc(#{$num} * 2) var(--sf-t-color);
+  }
+}
+
+@each $size,
+$num in $sizes {
+  .sf_b#{$size} {
+    --sf-b-color: theme("colors.black");
+    --sf-b-inner: ;
+    --sf-b: var(--sf-b-inner) 0px #{$num} calc(#{$num} * 2) var(--sf-b-color);
+  }
+}
+
+$colors: ("gray": (100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900),
+  "red": (100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900),
+  "orange": (100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900),
+  "yellow": (100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900),
+  "green": (100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900),
+  "teal": (100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900),
+  "blue": (100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900),
+  "indigo": (100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900),
+  "purple": (100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900),
+  "pink": (100,
+    200,
+    300,
+    400,
+    500,
+    600,
+    700,
+    800,
+    900));
+
+@each $color,
+$colorLevels in $colors {
+  @each $colorLevel in $colorLevels {
+    .sf_l--#{$color}-#{$colorLevel} {
+      --sf-l-color: theme("colors.#{$color}.#{$colorLevel}");
+    }
+
+    .sf_r--#{$color}-#{$colorLevel} {
+      --sf-r-color: theme("colors.#{$color}.#{$colorLevel}");
+    }
+
+    .sf_t--#{$color}-#{$colorLevel} {
+      --sf-t-color: theme("colors.#{$color}.#{$colorLevel}");
+    }
+
+    .sf_b--#{$color}-#{$colorLevel} {
+      --sf-b-color: theme("colors.#{$color}.#{$colorLevel}");
+    }
+  }
+}
+
+.sf_l--black {
+  --sf-l-color: theme("colors.black");
+}
+
+.sf_r--black {
+  --sf-r-color: theme("colors.black");
+}
+
+.sf_t--black {
+  --sf-t-color: theme("colors.black");
+}
+
+.sf_b--black {
+  --sf-b-color: theme("colors.black");
+}
+
+.sf_l--white {
+  --sf-l-color: theme("colors.white");
+}
+
+.sf_r--white {
+  --sf-r-color: theme("colors.white");
+}
+
+.sf_t--white {
+  --sf-t-color: theme("colors.white");
+}
+
+.sf_b--white {
+  --sf-b-color: theme("colors.white");
+}
+
+.sf_l--inner {
+  --sf-l-inner: inset;
+}
+
+.sf_r--inner {
+  --sf-r-inner: inset;
+}
+
+.sf_t--inner {
+  --sf-t-inner: inset;
+}
+
+.sf_b--inner {
+  --sf-b-inner: inset;
+}

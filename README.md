@@ -145,18 +145,11 @@
 ```
 
 <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
-    <style>
-        @import url(./build/css/output.css);
-
-        div.background {
-            background: #262626;
-            height: 300px;
-            width: 300px;
-        }
-
-        div.card {
-            height: 100px;
-            width: 100px;
-            background: #262626;
-        }
-    </style>
+<style>
+    @import url(./build/css/output.css);
+</style>
+<div class="bg-pink-900 w-64 h-64 p-16">
+    <div
+        class="sf_lt sf_lt--pink-700 active:sf_lt--inner sf_rb sf_rb--black active:sf_rb--inner shadow-func bg-pink-900 w-32 h-32 rounded-md">
+    </div>
+</div>

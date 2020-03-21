@@ -148,7 +148,21 @@
 <style>
     @import url(./build/css/output.css);
 </style>
-<div class="bg-pink-900 w-64 h-64 p-16">
+
+```html
+<link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
+<style>
+    @import url(./build/css/output.css);
+</style>
+
+<div class="bg-pink-900 w-64 h-64 p-16 rounded-md">
+    <div
+        class="sf_lt sf_lt--pink-700 active:sf_lt--inner sf_rb sf_rb--black active:sf_rb--inner shadow-func bg-pink-900 w-32 h-32 rounded-md">
+    </div>
+</div>
+```
+
+<div class="bg-pink-900 w-64 h-64 p-16 rounded-md">
     <div
         class="sf_lt sf_lt--pink-700 active:sf_lt--inner sf_rb sf_rb--black active:sf_rb--inner shadow-func bg-pink-900 w-32 h-32 rounded-md">
     </div>

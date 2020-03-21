@@ -11,7 +11,19 @@
   --sf-r: var(--sf-r-inner) 0px 0px 0px var(--sf-r-color);
   --sf-t: var(--sf-t-inner) 0px 0px 0px var(--sf-t-color);
   --sf-b: var(--sf-b-inner) 0px 0px 0px var(--sf-b-color);
-  box-shadow: var(--sf-l), var(--sf-t), var(--sf-r), var(--sf-b);
+  --sf-lt-color: #00000000;
+  --sf-rt-color: #00000000;
+  --sf-lb-color: #00000000;
+  --sf-rb-color: #00000000;
+  --sf-lt-inner: ;
+  --sf-rt-inner: ;
+  --sf-lb-inner: ;
+  --sf-rb-inner: ;
+  --sf-lt: var(--sf-lt-inner) 0px 0px 0px var(--sf-lt-color);
+  --sf-rt: var(--sf-rt-inner) 0px 0px 0px var(--sf-rt-color);
+  --sf-lb: var(--sf-lb-inner) 0px 0px 0px var(--sf-lb-color);
+  --sf-rb: var(--sf-rb-inner) 0px 0px 0px var(--sf-rb-color);
+  box-shadow: var(--sf-r), var(--sf-b), var(--sf-l), var(--sf-t), var(--sf-lt), var(--sf-rb), var(--sf-lb), var(--sf-rt);
 }
 
 .sf_l--xs {
@@ -29,7 +41,7 @@
 .sf_l {
   --sf-l-color: #000;
   --sf-l-inner: ;
-  --sf-l: var(--sf-l-inner) -5px 0px calc(5px * 2) var(--sf-l-color);
+  --sf-l: var(--sf-l-inner) -4px 0px calc(4px * 2) var(--sf-l-color);
 }
 
 .sf_l--md {
@@ -71,7 +83,7 @@
 .sf_r {
   --sf-r-color: #000;
   --sf-r-inner: ;
-  --sf-r: var(--sf-r-inner) 5px 0px calc(5px * 2) var(--sf-r-color);
+  --sf-r: var(--sf-r-inner) 4px 0px calc(4px * 2) var(--sf-r-color);
 }
 
 .sf_r--md {
@@ -113,7 +125,7 @@
 .sf_t {
   --sf-t-color: #000;
   --sf-t-inner: ;
-  --sf-t: var(--sf-t-inner) 0px -5px calc(5px * 2) var(--sf-t-color);
+  --sf-t: var(--sf-t-inner) 0px -4px calc(4px * 2) var(--sf-t-color);
 }
 
 .sf_t--md {
@@ -155,7 +167,7 @@
 .sf_b {
   --sf-b-color: #000;
   --sf-b-inner: ;
-  --sf-b: var(--sf-b-inner) 0px 5px calc(5px * 2) var(--sf-b-color);
+  --sf-b: var(--sf-b-inner) 0px 4px calc(4px * 2) var(--sf-b-color);
 }
 
 .sf_b--md {
@@ -182,6 +194,174 @@
   --sf-b: var(--sf-b-inner) 0px 15px calc(15px * 2) var(--sf-b-color);
 }
 
+.sf_lt--xs {
+  --sf-lt-color: #000;
+  --sf-lt-inner: ;
+  --sf-lt: var(--sf-lt-inner) -1px -1px calc(1px * 2) var(--sf-lt-color);
+}
+
+.sf_lt--sm {
+  --sf-lt-color: #000;
+  --sf-lt-inner: ;
+  --sf-lt: var(--sf-lt-inner) -3px -3px calc(3px * 2) var(--sf-lt-color);
+}
+
+.sf_lt {
+  --sf-lt-color: #000;
+  --sf-lt-inner: ;
+  --sf-lt: var(--sf-lt-inner) -4px -4px calc(4px * 2) var(--sf-lt-color);
+}
+
+.sf_lt--md {
+  --sf-lt-color: #000;
+  --sf-lt-inner: ;
+  --sf-lt: var(--sf-lt-inner) -7px -7px calc(7px * 2) var(--sf-lt-color);
+}
+
+.sf_lt--lg {
+  --sf-lt-color: #000;
+  --sf-lt-inner: ;
+  --sf-lt: var(--sf-lt-inner) -9px -9px calc(9px * 2) var(--sf-lt-color);
+}
+
+.sf_lt--xl {
+  --sf-lt-color: #000;
+  --sf-lt-inner: ;
+  --sf-lt: var(--sf-lt-inner) -12px -12px calc(12px * 2) var(--sf-lt-color);
+}
+
+.sf_lt--2xl {
+  --sf-lt-color: #000;
+  --sf-lt-inner: ;
+  --sf-lt: var(--sf-lt-inner) -15px -15px calc(15px * 2) var(--sf-lt-color);
+}
+
+.sf_rt--xs {
+  --sf-rt-color: #000;
+  --sf-rt-inner: ;
+  --sf-rt: var(--sf-rt-inner) 1px -1px calc(1px * 2) var(--sf-rt-color);
+}
+
+.sf_rt--sm {
+  --sf-rt-color: #000;
+  --sf-rt-inner: ;
+  --sf-rt: var(--sf-rt-inner) 3px -3px calc(3px * 2) var(--sf-rt-color);
+}
+
+.sf_rt {
+  --sf-rt-color: #000;
+  --sf-rt-inner: ;
+  --sf-rt: var(--sf-rt-inner) 4px -4px calc(4px * 2) var(--sf-rt-color);
+}
+
+.sf_rt--md {
+  --sf-rt-color: #000;
+  --sf-rt-inner: ;
+  --sf-rt: var(--sf-rt-inner) 7px -7px calc(7px * 2) var(--sf-rt-color);
+}
+
+.sf_rt--lg {
+  --sf-rt-color: #000;
+  --sf-rt-inner: ;
+  --sf-rt: var(--sf-rt-inner) 9px -9px calc(9px * 2) var(--sf-rt-color);
+}
+
+.sf_rt--xl {
+  --sf-rt-color: #000;
+  --sf-rt-inner: ;
+  --sf-rt: var(--sf-rt-inner) 12px -12px calc(12px * 2) var(--sf-rt-color);
+}
+
+.sf_rt--2xl {
+  --sf-rt-color: #000;
+  --sf-rt-inner: ;
+  --sf-rt: var(--sf-rt-inner) 15px -15px calc(15px * 2) var(--sf-rt-color);
+}
+
+.sf_lb--xs {
+  --sf-lb-color: #000;
+  --sf-lb-inner: ;
+  --sf-lb: var(--sf-lb-inner) -1px 1px calc(1px * 2) var(--sf-lb-color);
+}
+
+.sf_lb--sm {
+  --sf-lb-color: #000;
+  --sf-lb-inner: ;
+  --sf-lb: var(--sf-lb-inner) -3px 3px calc(3px * 2) var(--sf-lb-color);
+}
+
+.sf_lb {
+  --sf-lb-color: #000;
+  --sf-lb-inner: ;
+  --sf-lb: var(--sf-lb-inner) -4px 4px calc(4px * 2) var(--sf-lb-color);
+}
+
+.sf_lb--md {
+  --sf-lb-color: #000;
+  --sf-lb-inner: ;
+  --sf-lb: var(--sf-lb-inner) -7px 7px calc(7px * 2) var(--sf-lb-color);
+}
+
+.sf_lb--lg {
+  --sf-lb-color: #000;
+  --sf-lb-inner: ;
+  --sf-lb: var(--sf-lb-inner) -9px 9px calc(9px * 2) var(--sf-lb-color);
+}
+
+.sf_lb--xl {
+  --sf-lb-color: #000;
+  --sf-lb-inner: ;
+  --sf-lb: var(--sf-lb-inner) -12px 12px calc(12px * 2) var(--sf-lb-color);
+}
+
+.sf_lb--2xl {
+  --sf-lb-color: #000;
+  --sf-lb-inner: ;
+  --sf-lb: var(--sf-lb-inner) -15px 15px calc(15px * 2) var(--sf-lb-color);
+}
+
+.sf_rb--xs {
+  --sf-rb-color: #000;
+  --sf-rb-inner: ;
+  --sf-rb: var(--sf-rb-inner) 1px 1px calc(1px * 2) var(--sf-rb-color);
+}
+
+.sf_rb--sm {
+  --sf-rb-color: #000;
+  --sf-rb-inner: ;
+  --sf-rb: var(--sf-rb-inner) 3px 3px calc(3px * 2) var(--sf-rb-color);
+}
+
+.sf_rb {
+  --sf-rb-color: #000;
+  --sf-rb-inner: ;
+  --sf-rb: var(--sf-rb-inner) 4px 4px calc(4px * 2) var(--sf-rb-color);
+}
+
+.sf_rb--md {
+  --sf-rb-color: #000;
+  --sf-rb-inner: ;
+  --sf-rb: var(--sf-rb-inner) 7px 7px calc(7px * 2) var(--sf-rb-color);
+}
+
+.sf_rb--lg {
+  --sf-rb-color: #000;
+  --sf-rb-inner: ;
+  --sf-rb: var(--sf-rb-inner) 9px 9px calc(9px * 2) var(--sf-rb-color);
+}
+
+.sf_rb--xl {
+  --sf-rb-color: #000;
+  --sf-rb-inner: ;
+  --sf-rb: var(--sf-rb-inner) 12px 12px calc(12px * 2) var(--sf-rb-color);
+}
+
+.sf_rb--2xl {
+  --sf-rb-color: #000;
+  --sf-rb-inner: ;
+  --sf-rb: var(--sf-rb-inner) 15px 15px calc(15px * 2) var(--sf-rb-color);
+}
+
 .sf_l--gray-100 {
   --sf-l-color: #f7fafc;
 }
@@ -196,6 +376,22 @@
 
 .sf_b--gray-100 {
   --sf-b-color: #f7fafc;
+}
+
+.sf_lt--gray-100 {
+  --sf-lt-color: #f7fafc;
+}
+
+.sf_rt--gray-100 {
+  --sf-rt-color: #f7fafc;
+}
+
+.sf_lb--gray-100 {
+  --sf-lb-color: #f7fafc;
+}
+
+.sf_rb--gray-100 {
+  --sf-rb-color: #f7fafc;
 }
 
 .sf_l--gray-200 {
@@ -214,6 +410,22 @@
   --sf-b-color: #edf2f7;
 }
 
+.sf_lt--gray-200 {
+  --sf-lt-color: #edf2f7;
+}
+
+.sf_rt--gray-200 {
+  --sf-rt-color: #edf2f7;
+}
+
+.sf_lb--gray-200 {
+  --sf-lb-color: #edf2f7;
+}
+
+.sf_rb--gray-200 {
+  --sf-rb-color: #edf2f7;
+}
+
 .sf_l--gray-300 {
   --sf-l-color: #e2e8f0;
 }
@@ -228,6 +440,22 @@
 
 .sf_b--gray-300 {
   --sf-b-color: #e2e8f0;
+}
+
+.sf_lt--gray-300 {
+  --sf-lt-color: #e2e8f0;
+}
+
+.sf_rt--gray-300 {
+  --sf-rt-color: #e2e8f0;
+}
+
+.sf_lb--gray-300 {
+  --sf-lb-color: #e2e8f0;
+}
+
+.sf_rb--gray-300 {
+  --sf-rb-color: #e2e8f0;
 }
 
 .sf_l--gray-400 {
@@ -246,6 +474,22 @@
   --sf-b-color: #cbd5e0;
 }
 
+.sf_lt--gray-400 {
+  --sf-lt-color: #cbd5e0;
+}
+
+.sf_rt--gray-400 {
+  --sf-rt-color: #cbd5e0;
+}
+
+.sf_lb--gray-400 {
+  --sf-lb-color: #cbd5e0;
+}
+
+.sf_rb--gray-400 {
+  --sf-rb-color: #cbd5e0;
+}
+
 .sf_l--gray-500 {
   --sf-l-color: #a0aec0;
 }
@@ -260,6 +504,22 @@
 
 .sf_b--gray-500 {
   --sf-b-color: #a0aec0;
+}
+
+.sf_lt--gray-500 {
+  --sf-lt-color: #a0aec0;
+}
+
+.sf_rt--gray-500 {
+  --sf-rt-color: #a0aec0;
+}
+
+.sf_lb--gray-500 {
+  --sf-lb-color: #a0aec0;
+}
+
+.sf_rb--gray-500 {
+  --sf-rb-color: #a0aec0;
 }
 
 .sf_l--gray-600 {
@@ -278,6 +538,22 @@
   --sf-b-color: #718096;
 }
 
+.sf_lt--gray-600 {
+  --sf-lt-color: #718096;
+}
+
+.sf_rt--gray-600 {
+  --sf-rt-color: #718096;
+}
+
+.sf_lb--gray-600 {
+  --sf-lb-color: #718096;
+}
+
+.sf_rb--gray-600 {
+  --sf-rb-color: #718096;
+}
+
 .sf_l--gray-700 {
   --sf-l-color: #4a5568;
 }
@@ -292,6 +568,22 @@
 
 .sf_b--gray-700 {
   --sf-b-color: #4a5568;
+}
+
+.sf_lt--gray-700 {
+  --sf-lt-color: #4a5568;
+}
+
+.sf_rt--gray-700 {
+  --sf-rt-color: #4a5568;
+}
+
+.sf_lb--gray-700 {
+  --sf-lb-color: #4a5568;
+}
+
+.sf_rb--gray-700 {
+  --sf-rb-color: #4a5568;
 }
 
 .sf_l--gray-800 {
@@ -310,6 +602,22 @@
   --sf-b-color: #2d3748;
 }
 
+.sf_lt--gray-800 {
+  --sf-lt-color: #2d3748;
+}
+
+.sf_rt--gray-800 {
+  --sf-rt-color: #2d3748;
+}
+
+.sf_lb--gray-800 {
+  --sf-lb-color: #2d3748;
+}
+
+.sf_rb--gray-800 {
+  --sf-rb-color: #2d3748;
+}
+
 .sf_l--gray-900 {
   --sf-l-color: #1a202c;
 }
@@ -324,6 +632,22 @@
 
 .sf_b--gray-900 {
   --sf-b-color: #1a202c;
+}
+
+.sf_lt--gray-900 {
+  --sf-lt-color: #1a202c;
+}
+
+.sf_rt--gray-900 {
+  --sf-rt-color: #1a202c;
+}
+
+.sf_lb--gray-900 {
+  --sf-lb-color: #1a202c;
+}
+
+.sf_rb--gray-900 {
+  --sf-rb-color: #1a202c;
 }
 
 .sf_l--red-100 {
@@ -342,6 +666,22 @@
   --sf-b-color: #fff5f5;
 }
 
+.sf_lt--red-100 {
+  --sf-lt-color: #fff5f5;
+}
+
+.sf_rt--red-100 {
+  --sf-rt-color: #fff5f5;
+}
+
+.sf_lb--red-100 {
+  --sf-lb-color: #fff5f5;
+}
+
+.sf_rb--red-100 {
+  --sf-rb-color: #fff5f5;
+}
+
 .sf_l--red-200 {
   --sf-l-color: #fed7d7;
 }
@@ -356,6 +696,22 @@
 
 .sf_b--red-200 {
   --sf-b-color: #fed7d7;
+}
+
+.sf_lt--red-200 {
+  --sf-lt-color: #fed7d7;
+}
+
+.sf_rt--red-200 {
+  --sf-rt-color: #fed7d7;
+}
+
+.sf_lb--red-200 {
+  --sf-lb-color: #fed7d7;
+}
+
+.sf_rb--red-200 {
+  --sf-rb-color: #fed7d7;
 }
 
 .sf_l--red-300 {
@@ -374,6 +730,22 @@
   --sf-b-color: #feb2b2;
 }
 
+.sf_lt--red-300 {
+  --sf-lt-color: #feb2b2;
+}
+
+.sf_rt--red-300 {
+  --sf-rt-color: #feb2b2;
+}
+
+.sf_lb--red-300 {
+  --sf-lb-color: #feb2b2;
+}
+
+.sf_rb--red-300 {
+  --sf-rb-color: #feb2b2;
+}
+
 .sf_l--red-400 {
   --sf-l-color: #fc8181;
 }
@@ -388,6 +760,22 @@
 
 .sf_b--red-400 {
   --sf-b-color: #fc8181;
+}
+
+.sf_lt--red-400 {
+  --sf-lt-color: #fc8181;
+}
+
+.sf_rt--red-400 {
+  --sf-rt-color: #fc8181;
+}
+
+.sf_lb--red-400 {
+  --sf-lb-color: #fc8181;
+}
+
+.sf_rb--red-400 {
+  --sf-rb-color: #fc8181;
 }
 
 .sf_l--red-500 {
@@ -406,6 +794,22 @@
   --sf-b-color: #f56565;
 }
 
+.sf_lt--red-500 {
+  --sf-lt-color: #f56565;
+}
+
+.sf_rt--red-500 {
+  --sf-rt-color: #f56565;
+}
+
+.sf_lb--red-500 {
+  --sf-lb-color: #f56565;
+}
+
+.sf_rb--red-500 {
+  --sf-rb-color: #f56565;
+}
+
 .sf_l--red-600 {
   --sf-l-color: #e53e3e;
 }
@@ -420,6 +824,22 @@
 
 .sf_b--red-600 {
   --sf-b-color: #e53e3e;
+}
+
+.sf_lt--red-600 {
+  --sf-lt-color: #e53e3e;
+}
+
+.sf_rt--red-600 {
+  --sf-rt-color: #e53e3e;
+}
+
+.sf_lb--red-600 {
+  --sf-lb-color: #e53e3e;
+}
+
+.sf_rb--red-600 {
+  --sf-rb-color: #e53e3e;
 }
 
 .sf_l--red-700 {
@@ -438,6 +858,22 @@
   --sf-b-color: #c53030;
 }
 
+.sf_lt--red-700 {
+  --sf-lt-color: #c53030;
+}
+
+.sf_rt--red-700 {
+  --sf-rt-color: #c53030;
+}
+
+.sf_lb--red-700 {
+  --sf-lb-color: #c53030;
+}
+
+.sf_rb--red-700 {
+  --sf-rb-color: #c53030;
+}
+
 .sf_l--red-800 {
   --sf-l-color: #9b2c2c;
 }
@@ -452,6 +888,22 @@
 
 .sf_b--red-800 {
   --sf-b-color: #9b2c2c;
+}
+
+.sf_lt--red-800 {
+  --sf-lt-color: #9b2c2c;
+}
+
+.sf_rt--red-800 {
+  --sf-rt-color: #9b2c2c;
+}
+
+.sf_lb--red-800 {
+  --sf-lb-color: #9b2c2c;
+}
+
+.sf_rb--red-800 {
+  --sf-rb-color: #9b2c2c;
 }
 
 .sf_l--red-900 {
@@ -470,6 +922,22 @@
   --sf-b-color: #742a2a;
 }
 
+.sf_lt--red-900 {
+  --sf-lt-color: #742a2a;
+}
+
+.sf_rt--red-900 {
+  --sf-rt-color: #742a2a;
+}
+
+.sf_lb--red-900 {
+  --sf-lb-color: #742a2a;
+}
+
+.sf_rb--red-900 {
+  --sf-rb-color: #742a2a;
+}
+
 .sf_l--orange-100 {
   --sf-l-color: #fffaf0;
 }
@@ -484,6 +952,22 @@
 
 .sf_b--orange-100 {
   --sf-b-color: #fffaf0;
+}
+
+.sf_lt--orange-100 {
+  --sf-lt-color: #fffaf0;
+}
+
+.sf_rt--orange-100 {
+  --sf-rt-color: #fffaf0;
+}
+
+.sf_lb--orange-100 {
+  --sf-lb-color: #fffaf0;
+}
+
+.sf_rb--orange-100 {
+  --sf-rb-color: #fffaf0;
 }
 
 .sf_l--orange-200 {
@@ -502,6 +986,22 @@
   --sf-b-color: #feebc8;
 }
 
+.sf_lt--orange-200 {
+  --sf-lt-color: #feebc8;
+}
+
+.sf_rt--orange-200 {
+  --sf-rt-color: #feebc8;
+}
+
+.sf_lb--orange-200 {
+  --sf-lb-color: #feebc8;
+}
+
+.sf_rb--orange-200 {
+  --sf-rb-color: #feebc8;
+}
+
 .sf_l--orange-300 {
   --sf-l-color: #fbd38d;
 }
@@ -516,6 +1016,22 @@
 
 .sf_b--orange-300 {
   --sf-b-color: #fbd38d;
+}
+
+.sf_lt--orange-300 {
+  --sf-lt-color: #fbd38d;
+}
+
+.sf_rt--orange-300 {
+  --sf-rt-color: #fbd38d;
+}
+
+.sf_lb--orange-300 {
+  --sf-lb-color: #fbd38d;
+}
+
+.sf_rb--orange-300 {
+  --sf-rb-color: #fbd38d;
 }
 
 .sf_l--orange-400 {
@@ -534,6 +1050,22 @@
   --sf-b-color: #f6ad55;
 }
 
+.sf_lt--orange-400 {
+  --sf-lt-color: #f6ad55;
+}
+
+.sf_rt--orange-400 {
+  --sf-rt-color: #f6ad55;
+}
+
+.sf_lb--orange-400 {
+  --sf-lb-color: #f6ad55;
+}
+
+.sf_rb--orange-400 {
+  --sf-rb-color: #f6ad55;
+}
+
 .sf_l--orange-500 {
   --sf-l-color: #ed8936;
 }
@@ -548,6 +1080,22 @@
 
 .sf_b--orange-500 {
   --sf-b-color: #ed8936;
+}
+
+.sf_lt--orange-500 {
+  --sf-lt-color: #ed8936;
+}
+
+.sf_rt--orange-500 {
+  --sf-rt-color: #ed8936;
+}
+
+.sf_lb--orange-500 {
+  --sf-lb-color: #ed8936;
+}
+
+.sf_rb--orange-500 {
+  --sf-rb-color: #ed8936;
 }
 
 .sf_l--orange-600 {
@@ -566,6 +1114,22 @@
   --sf-b-color: #dd6b20;
 }
 
+.sf_lt--orange-600 {
+  --sf-lt-color: #dd6b20;
+}
+
+.sf_rt--orange-600 {
+  --sf-rt-color: #dd6b20;
+}
+
+.sf_lb--orange-600 {
+  --sf-lb-color: #dd6b20;
+}
+
+.sf_rb--orange-600 {
+  --sf-rb-color: #dd6b20;
+}
+
 .sf_l--orange-700 {
   --sf-l-color: #c05621;
 }
@@ -580,6 +1144,22 @@
 
 .sf_b--orange-700 {
   --sf-b-color: #c05621;
+}
+
+.sf_lt--orange-700 {
+  --sf-lt-color: #c05621;
+}
+
+.sf_rt--orange-700 {
+  --sf-rt-color: #c05621;
+}
+
+.sf_lb--orange-700 {
+  --sf-lb-color: #c05621;
+}
+
+.sf_rb--orange-700 {
+  --sf-rb-color: #c05621;
 }
 
 .sf_l--orange-800 {
@@ -598,6 +1178,22 @@
   --sf-b-color: #9c4221;
 }
 
+.sf_lt--orange-800 {
+  --sf-lt-color: #9c4221;
+}
+
+.sf_rt--orange-800 {
+  --sf-rt-color: #9c4221;
+}
+
+.sf_lb--orange-800 {
+  --sf-lb-color: #9c4221;
+}
+
+.sf_rb--orange-800 {
+  --sf-rb-color: #9c4221;
+}
+
 .sf_l--orange-900 {
   --sf-l-color: #7b341e;
 }
@@ -612,6 +1208,22 @@
 
 .sf_b--orange-900 {
   --sf-b-color: #7b341e;
+}
+
+.sf_lt--orange-900 {
+  --sf-lt-color: #7b341e;
+}
+
+.sf_rt--orange-900 {
+  --sf-rt-color: #7b341e;
+}
+
+.sf_lb--orange-900 {
+  --sf-lb-color: #7b341e;
+}
+
+.sf_rb--orange-900 {
+  --sf-rb-color: #7b341e;
 }
 
 .sf_l--yellow-100 {
@@ -630,6 +1242,22 @@
   --sf-b-color: #fffff0;
 }
 
+.sf_lt--yellow-100 {
+  --sf-lt-color: #fffff0;
+}
+
+.sf_rt--yellow-100 {
+  --sf-rt-color: #fffff0;
+}
+
+.sf_lb--yellow-100 {
+  --sf-lb-color: #fffff0;
+}
+
+.sf_rb--yellow-100 {
+  --sf-rb-color: #fffff0;
+}
+
 .sf_l--yellow-200 {
   --sf-l-color: #fefcbf;
 }
@@ -644,6 +1272,22 @@
 
 .sf_b--yellow-200 {
   --sf-b-color: #fefcbf;
+}
+
+.sf_lt--yellow-200 {
+  --sf-lt-color: #fefcbf;
+}
+
+.sf_rt--yellow-200 {
+  --sf-rt-color: #fefcbf;
+}
+
+.sf_lb--yellow-200 {
+  --sf-lb-color: #fefcbf;
+}
+
+.sf_rb--yellow-200 {
+  --sf-rb-color: #fefcbf;
 }
 
 .sf_l--yellow-300 {
@@ -662,6 +1306,22 @@
   --sf-b-color: #faf089;
 }
 
+.sf_lt--yellow-300 {
+  --sf-lt-color: #faf089;
+}
+
+.sf_rt--yellow-300 {
+  --sf-rt-color: #faf089;
+}
+
+.sf_lb--yellow-300 {
+  --sf-lb-color: #faf089;
+}
+
+.sf_rb--yellow-300 {
+  --sf-rb-color: #faf089;
+}
+
 .sf_l--yellow-400 {
   --sf-l-color: #f6e05e;
 }
@@ -676,6 +1336,22 @@
 
 .sf_b--yellow-400 {
   --sf-b-color: #f6e05e;
+}
+
+.sf_lt--yellow-400 {
+  --sf-lt-color: #f6e05e;
+}
+
+.sf_rt--yellow-400 {
+  --sf-rt-color: #f6e05e;
+}
+
+.sf_lb--yellow-400 {
+  --sf-lb-color: #f6e05e;
+}
+
+.sf_rb--yellow-400 {
+  --sf-rb-color: #f6e05e;
 }
 
 .sf_l--yellow-500 {
@@ -694,6 +1370,22 @@
   --sf-b-color: #ecc94b;
 }
 
+.sf_lt--yellow-500 {
+  --sf-lt-color: #ecc94b;
+}
+
+.sf_rt--yellow-500 {
+  --sf-rt-color: #ecc94b;
+}
+
+.sf_lb--yellow-500 {
+  --sf-lb-color: #ecc94b;
+}
+
+.sf_rb--yellow-500 {
+  --sf-rb-color: #ecc94b;
+}
+
 .sf_l--yellow-600 {
   --sf-l-color: #d69e2e;
 }
@@ -708,6 +1400,22 @@
 
 .sf_b--yellow-600 {
   --sf-b-color: #d69e2e;
+}
+
+.sf_lt--yellow-600 {
+  --sf-lt-color: #d69e2e;
+}
+
+.sf_rt--yellow-600 {
+  --sf-rt-color: #d69e2e;
+}
+
+.sf_lb--yellow-600 {
+  --sf-lb-color: #d69e2e;
+}
+
+.sf_rb--yellow-600 {
+  --sf-rb-color: #d69e2e;
 }
 
 .sf_l--yellow-700 {
@@ -726,6 +1434,22 @@
   --sf-b-color: #b7791f;
 }
 
+.sf_lt--yellow-700 {
+  --sf-lt-color: #b7791f;
+}
+
+.sf_rt--yellow-700 {
+  --sf-rt-color: #b7791f;
+}
+
+.sf_lb--yellow-700 {
+  --sf-lb-color: #b7791f;
+}
+
+.sf_rb--yellow-700 {
+  --sf-rb-color: #b7791f;
+}
+
 .sf_l--yellow-800 {
   --sf-l-color: #975a16;
 }
@@ -740,6 +1464,22 @@
 
 .sf_b--yellow-800 {
   --sf-b-color: #975a16;
+}
+
+.sf_lt--yellow-800 {
+  --sf-lt-color: #975a16;
+}
+
+.sf_rt--yellow-800 {
+  --sf-rt-color: #975a16;
+}
+
+.sf_lb--yellow-800 {
+  --sf-lb-color: #975a16;
+}
+
+.sf_rb--yellow-800 {
+  --sf-rb-color: #975a16;
 }
 
 .sf_l--yellow-900 {
@@ -758,6 +1498,22 @@
   --sf-b-color: #744210;
 }
 
+.sf_lt--yellow-900 {
+  --sf-lt-color: #744210;
+}
+
+.sf_rt--yellow-900 {
+  --sf-rt-color: #744210;
+}
+
+.sf_lb--yellow-900 {
+  --sf-lb-color: #744210;
+}
+
+.sf_rb--yellow-900 {
+  --sf-rb-color: #744210;
+}
+
 .sf_l--green-100 {
   --sf-l-color: #f0fff4;
 }
@@ -772,6 +1528,22 @@
 
 .sf_b--green-100 {
   --sf-b-color: #f0fff4;
+}
+
+.sf_lt--green-100 {
+  --sf-lt-color: #f0fff4;
+}
+
+.sf_rt--green-100 {
+  --sf-rt-color: #f0fff4;
+}
+
+.sf_lb--green-100 {
+  --sf-lb-color: #f0fff4;
+}
+
+.sf_rb--green-100 {
+  --sf-rb-color: #f0fff4;
 }
 
 .sf_l--green-200 {
@@ -790,6 +1562,22 @@
   --sf-b-color: #c6f6d5;
 }
 
+.sf_lt--green-200 {
+  --sf-lt-color: #c6f6d5;
+}
+
+.sf_rt--green-200 {
+  --sf-rt-color: #c6f6d5;
+}
+
+.sf_lb--green-200 {
+  --sf-lb-color: #c6f6d5;
+}
+
+.sf_rb--green-200 {
+  --sf-rb-color: #c6f6d5;
+}
+
 .sf_l--green-300 {
   --sf-l-color: #9ae6b4;
 }
@@ -804,6 +1592,22 @@
 
 .sf_b--green-300 {
   --sf-b-color: #9ae6b4;
+}
+
+.sf_lt--green-300 {
+  --sf-lt-color: #9ae6b4;
+}
+
+.sf_rt--green-300 {
+  --sf-rt-color: #9ae6b4;
+}
+
+.sf_lb--green-300 {
+  --sf-lb-color: #9ae6b4;
+}
+
+.sf_rb--green-300 {
+  --sf-rb-color: #9ae6b4;
 }
 
 .sf_l--green-400 {
@@ -822,6 +1626,22 @@
   --sf-b-color: #68d391;
 }
 
+.sf_lt--green-400 {
+  --sf-lt-color: #68d391;
+}
+
+.sf_rt--green-400 {
+  --sf-rt-color: #68d391;
+}
+
+.sf_lb--green-400 {
+  --sf-lb-color: #68d391;
+}
+
+.sf_rb--green-400 {
+  --sf-rb-color: #68d391;
+}
+
 .sf_l--green-500 {
   --sf-l-color: #48bb78;
 }
@@ -836,6 +1656,22 @@
 
 .sf_b--green-500 {
   --sf-b-color: #48bb78;
+}
+
+.sf_lt--green-500 {
+  --sf-lt-color: #48bb78;
+}
+
+.sf_rt--green-500 {
+  --sf-rt-color: #48bb78;
+}
+
+.sf_lb--green-500 {
+  --sf-lb-color: #48bb78;
+}
+
+.sf_rb--green-500 {
+  --sf-rb-color: #48bb78;
 }
 
 .sf_l--green-600 {
@@ -854,6 +1690,22 @@
   --sf-b-color: #38a169;
 }
 
+.sf_lt--green-600 {
+  --sf-lt-color: #38a169;
+}
+
+.sf_rt--green-600 {
+  --sf-rt-color: #38a169;
+}
+
+.sf_lb--green-600 {
+  --sf-lb-color: #38a169;
+}
+
+.sf_rb--green-600 {
+  --sf-rb-color: #38a169;
+}
+
 .sf_l--green-700 {
   --sf-l-color: #2f855a;
 }
@@ -868,6 +1720,22 @@
 
 .sf_b--green-700 {
   --sf-b-color: #2f855a;
+}
+
+.sf_lt--green-700 {
+  --sf-lt-color: #2f855a;
+}
+
+.sf_rt--green-700 {
+  --sf-rt-color: #2f855a;
+}
+
+.sf_lb--green-700 {
+  --sf-lb-color: #2f855a;
+}
+
+.sf_rb--green-700 {
+  --sf-rb-color: #2f855a;
 }
 
 .sf_l--green-800 {
@@ -886,6 +1754,22 @@
   --sf-b-color: #276749;
 }
 
+.sf_lt--green-800 {
+  --sf-lt-color: #276749;
+}
+
+.sf_rt--green-800 {
+  --sf-rt-color: #276749;
+}
+
+.sf_lb--green-800 {
+  --sf-lb-color: #276749;
+}
+
+.sf_rb--green-800 {
+  --sf-rb-color: #276749;
+}
+
 .sf_l--green-900 {
   --sf-l-color: #22543d;
 }
@@ -900,6 +1784,22 @@
 
 .sf_b--green-900 {
   --sf-b-color: #22543d;
+}
+
+.sf_lt--green-900 {
+  --sf-lt-color: #22543d;
+}
+
+.sf_rt--green-900 {
+  --sf-rt-color: #22543d;
+}
+
+.sf_lb--green-900 {
+  --sf-lb-color: #22543d;
+}
+
+.sf_rb--green-900 {
+  --sf-rb-color: #22543d;
 }
 
 .sf_l--teal-100 {
@@ -918,6 +1818,22 @@
   --sf-b-color: #e6fffa;
 }
 
+.sf_lt--teal-100 {
+  --sf-lt-color: #e6fffa;
+}
+
+.sf_rt--teal-100 {
+  --sf-rt-color: #e6fffa;
+}
+
+.sf_lb--teal-100 {
+  --sf-lb-color: #e6fffa;
+}
+
+.sf_rb--teal-100 {
+  --sf-rb-color: #e6fffa;
+}
+
 .sf_l--teal-200 {
   --sf-l-color: #b2f5ea;
 }
@@ -932,6 +1848,22 @@
 
 .sf_b--teal-200 {
   --sf-b-color: #b2f5ea;
+}
+
+.sf_lt--teal-200 {
+  --sf-lt-color: #b2f5ea;
+}
+
+.sf_rt--teal-200 {
+  --sf-rt-color: #b2f5ea;
+}
+
+.sf_lb--teal-200 {
+  --sf-lb-color: #b2f5ea;
+}
+
+.sf_rb--teal-200 {
+  --sf-rb-color: #b2f5ea;
 }
 
 .sf_l--teal-300 {
@@ -950,6 +1882,22 @@
   --sf-b-color: #81e6d9;
 }
 
+.sf_lt--teal-300 {
+  --sf-lt-color: #81e6d9;
+}
+
+.sf_rt--teal-300 {
+  --sf-rt-color: #81e6d9;
+}
+
+.sf_lb--teal-300 {
+  --sf-lb-color: #81e6d9;
+}
+
+.sf_rb--teal-300 {
+  --sf-rb-color: #81e6d9;
+}
+
 .sf_l--teal-400 {
   --sf-l-color: #4fd1c5;
 }
@@ -964,6 +1912,22 @@
 
 .sf_b--teal-400 {
   --sf-b-color: #4fd1c5;
+}
+
+.sf_lt--teal-400 {
+  --sf-lt-color: #4fd1c5;
+}
+
+.sf_rt--teal-400 {
+  --sf-rt-color: #4fd1c5;
+}
+
+.sf_lb--teal-400 {
+  --sf-lb-color: #4fd1c5;
+}
+
+.sf_rb--teal-400 {
+  --sf-rb-color: #4fd1c5;
 }
 
 .sf_l--teal-500 {
@@ -982,6 +1946,22 @@
   --sf-b-color: #38b2ac;
 }
 
+.sf_lt--teal-500 {
+  --sf-lt-color: #38b2ac;
+}
+
+.sf_rt--teal-500 {
+  --sf-rt-color: #38b2ac;
+}
+
+.sf_lb--teal-500 {
+  --sf-lb-color: #38b2ac;
+}
+
+.sf_rb--teal-500 {
+  --sf-rb-color: #38b2ac;
+}
+
 .sf_l--teal-600 {
   --sf-l-color: #319795;
 }
@@ -996,6 +1976,22 @@
 
 .sf_b--teal-600 {
   --sf-b-color: #319795;
+}
+
+.sf_lt--teal-600 {
+  --sf-lt-color: #319795;
+}
+
+.sf_rt--teal-600 {
+  --sf-rt-color: #319795;
+}
+
+.sf_lb--teal-600 {
+  --sf-lb-color: #319795;
+}
+
+.sf_rb--teal-600 {
+  --sf-rb-color: #319795;
 }
 
 .sf_l--teal-700 {
@@ -1014,6 +2010,22 @@
   --sf-b-color: #2c7a7b;
 }
 
+.sf_lt--teal-700 {
+  --sf-lt-color: #2c7a7b;
+}
+
+.sf_rt--teal-700 {
+  --sf-rt-color: #2c7a7b;
+}
+
+.sf_lb--teal-700 {
+  --sf-lb-color: #2c7a7b;
+}
+
+.sf_rb--teal-700 {
+  --sf-rb-color: #2c7a7b;
+}
+
 .sf_l--teal-800 {
   --sf-l-color: #285e61;
 }
@@ -1028,6 +2040,22 @@
 
 .sf_b--teal-800 {
   --sf-b-color: #285e61;
+}
+
+.sf_lt--teal-800 {
+  --sf-lt-color: #285e61;
+}
+
+.sf_rt--teal-800 {
+  --sf-rt-color: #285e61;
+}
+
+.sf_lb--teal-800 {
+  --sf-lb-color: #285e61;
+}
+
+.sf_rb--teal-800 {
+  --sf-rb-color: #285e61;
 }
 
 .sf_l--teal-900 {
@@ -1046,6 +2074,22 @@
   --sf-b-color: #234e52;
 }
 
+.sf_lt--teal-900 {
+  --sf-lt-color: #234e52;
+}
+
+.sf_rt--teal-900 {
+  --sf-rt-color: #234e52;
+}
+
+.sf_lb--teal-900 {
+  --sf-lb-color: #234e52;
+}
+
+.sf_rb--teal-900 {
+  --sf-rb-color: #234e52;
+}
+
 .sf_l--blue-100 {
   --sf-l-color: #ebf8ff;
 }
@@ -1060,6 +2104,22 @@
 
 .sf_b--blue-100 {
   --sf-b-color: #ebf8ff;
+}
+
+.sf_lt--blue-100 {
+  --sf-lt-color: #ebf8ff;
+}
+
+.sf_rt--blue-100 {
+  --sf-rt-color: #ebf8ff;
+}
+
+.sf_lb--blue-100 {
+  --sf-lb-color: #ebf8ff;
+}
+
+.sf_rb--blue-100 {
+  --sf-rb-color: #ebf8ff;
 }
 
 .sf_l--blue-200 {
@@ -1078,6 +2138,22 @@
   --sf-b-color: #bee3f8;
 }
 
+.sf_lt--blue-200 {
+  --sf-lt-color: #bee3f8;
+}
+
+.sf_rt--blue-200 {
+  --sf-rt-color: #bee3f8;
+}
+
+.sf_lb--blue-200 {
+  --sf-lb-color: #bee3f8;
+}
+
+.sf_rb--blue-200 {
+  --sf-rb-color: #bee3f8;
+}
+
 .sf_l--blue-300 {
   --sf-l-color: #90cdf4;
 }
@@ -1092,6 +2168,22 @@
 
 .sf_b--blue-300 {
   --sf-b-color: #90cdf4;
+}
+
+.sf_lt--blue-300 {
+  --sf-lt-color: #90cdf4;
+}
+
+.sf_rt--blue-300 {
+  --sf-rt-color: #90cdf4;
+}
+
+.sf_lb--blue-300 {
+  --sf-lb-color: #90cdf4;
+}
+
+.sf_rb--blue-300 {
+  --sf-rb-color: #90cdf4;
 }
 
 .sf_l--blue-400 {
@@ -1110,6 +2202,22 @@
   --sf-b-color: #63b3ed;
 }
 
+.sf_lt--blue-400 {
+  --sf-lt-color: #63b3ed;
+}
+
+.sf_rt--blue-400 {
+  --sf-rt-color: #63b3ed;
+}
+
+.sf_lb--blue-400 {
+  --sf-lb-color: #63b3ed;
+}
+
+.sf_rb--blue-400 {
+  --sf-rb-color: #63b3ed;
+}
+
 .sf_l--blue-500 {
   --sf-l-color: #4299e1;
 }
@@ -1124,6 +2232,22 @@
 
 .sf_b--blue-500 {
   --sf-b-color: #4299e1;
+}
+
+.sf_lt--blue-500 {
+  --sf-lt-color: #4299e1;
+}
+
+.sf_rt--blue-500 {
+  --sf-rt-color: #4299e1;
+}
+
+.sf_lb--blue-500 {
+  --sf-lb-color: #4299e1;
+}
+
+.sf_rb--blue-500 {
+  --sf-rb-color: #4299e1;
 }
 
 .sf_l--blue-600 {
@@ -1142,6 +2266,22 @@
   --sf-b-color: #3182ce;
 }
 
+.sf_lt--blue-600 {
+  --sf-lt-color: #3182ce;
+}
+
+.sf_rt--blue-600 {
+  --sf-rt-color: #3182ce;
+}
+
+.sf_lb--blue-600 {
+  --sf-lb-color: #3182ce;
+}
+
+.sf_rb--blue-600 {
+  --sf-rb-color: #3182ce;
+}
+
 .sf_l--blue-700 {
   --sf-l-color: #2b6cb0;
 }
@@ -1156,6 +2296,22 @@
 
 .sf_b--blue-700 {
   --sf-b-color: #2b6cb0;
+}
+
+.sf_lt--blue-700 {
+  --sf-lt-color: #2b6cb0;
+}
+
+.sf_rt--blue-700 {
+  --sf-rt-color: #2b6cb0;
+}
+
+.sf_lb--blue-700 {
+  --sf-lb-color: #2b6cb0;
+}
+
+.sf_rb--blue-700 {
+  --sf-rb-color: #2b6cb0;
 }
 
 .sf_l--blue-800 {
@@ -1174,6 +2330,22 @@
   --sf-b-color: #2c5282;
 }
 
+.sf_lt--blue-800 {
+  --sf-lt-color: #2c5282;
+}
+
+.sf_rt--blue-800 {
+  --sf-rt-color: #2c5282;
+}
+
+.sf_lb--blue-800 {
+  --sf-lb-color: #2c5282;
+}
+
+.sf_rb--blue-800 {
+  --sf-rb-color: #2c5282;
+}
+
 .sf_l--blue-900 {
   --sf-l-color: #2a4365;
 }
@@ -1188,6 +2360,22 @@
 
 .sf_b--blue-900 {
   --sf-b-color: #2a4365;
+}
+
+.sf_lt--blue-900 {
+  --sf-lt-color: #2a4365;
+}
+
+.sf_rt--blue-900 {
+  --sf-rt-color: #2a4365;
+}
+
+.sf_lb--blue-900 {
+  --sf-lb-color: #2a4365;
+}
+
+.sf_rb--blue-900 {
+  --sf-rb-color: #2a4365;
 }
 
 .sf_l--indigo-100 {
@@ -1206,6 +2394,22 @@
   --sf-b-color: #ebf4ff;
 }
 
+.sf_lt--indigo-100 {
+  --sf-lt-color: #ebf4ff;
+}
+
+.sf_rt--indigo-100 {
+  --sf-rt-color: #ebf4ff;
+}
+
+.sf_lb--indigo-100 {
+  --sf-lb-color: #ebf4ff;
+}
+
+.sf_rb--indigo-100 {
+  --sf-rb-color: #ebf4ff;
+}
+
 .sf_l--indigo-200 {
   --sf-l-color: #c3dafe;
 }
@@ -1220,6 +2424,22 @@
 
 .sf_b--indigo-200 {
   --sf-b-color: #c3dafe;
+}
+
+.sf_lt--indigo-200 {
+  --sf-lt-color: #c3dafe;
+}
+
+.sf_rt--indigo-200 {
+  --sf-rt-color: #c3dafe;
+}
+
+.sf_lb--indigo-200 {
+  --sf-lb-color: #c3dafe;
+}
+
+.sf_rb--indigo-200 {
+  --sf-rb-color: #c3dafe;
 }
 
 .sf_l--indigo-300 {
@@ -1238,6 +2458,22 @@
   --sf-b-color: #a3bffa;
 }
 
+.sf_lt--indigo-300 {
+  --sf-lt-color: #a3bffa;
+}
+
+.sf_rt--indigo-300 {
+  --sf-rt-color: #a3bffa;
+}
+
+.sf_lb--indigo-300 {
+  --sf-lb-color: #a3bffa;
+}
+
+.sf_rb--indigo-300 {
+  --sf-rb-color: #a3bffa;
+}
+
 .sf_l--indigo-400 {
   --sf-l-color: #7f9cf5;
 }
@@ -1252,6 +2488,22 @@
 
 .sf_b--indigo-400 {
   --sf-b-color: #7f9cf5;
+}
+
+.sf_lt--indigo-400 {
+  --sf-lt-color: #7f9cf5;
+}
+
+.sf_rt--indigo-400 {
+  --sf-rt-color: #7f9cf5;
+}
+
+.sf_lb--indigo-400 {
+  --sf-lb-color: #7f9cf5;
+}
+
+.sf_rb--indigo-400 {
+  --sf-rb-color: #7f9cf5;
 }
 
 .sf_l--indigo-500 {
@@ -1270,6 +2522,22 @@
   --sf-b-color: #667eea;
 }
 
+.sf_lt--indigo-500 {
+  --sf-lt-color: #667eea;
+}
+
+.sf_rt--indigo-500 {
+  --sf-rt-color: #667eea;
+}
+
+.sf_lb--indigo-500 {
+  --sf-lb-color: #667eea;
+}
+
+.sf_rb--indigo-500 {
+  --sf-rb-color: #667eea;
+}
+
 .sf_l--indigo-600 {
   --sf-l-color: #5a67d8;
 }
@@ -1284,6 +2552,22 @@
 
 .sf_b--indigo-600 {
   --sf-b-color: #5a67d8;
+}
+
+.sf_lt--indigo-600 {
+  --sf-lt-color: #5a67d8;
+}
+
+.sf_rt--indigo-600 {
+  --sf-rt-color: #5a67d8;
+}
+
+.sf_lb--indigo-600 {
+  --sf-lb-color: #5a67d8;
+}
+
+.sf_rb--indigo-600 {
+  --sf-rb-color: #5a67d8;
 }
 
 .sf_l--indigo-700 {
@@ -1302,6 +2586,22 @@
   --sf-b-color: #4c51bf;
 }
 
+.sf_lt--indigo-700 {
+  --sf-lt-color: #4c51bf;
+}
+
+.sf_rt--indigo-700 {
+  --sf-rt-color: #4c51bf;
+}
+
+.sf_lb--indigo-700 {
+  --sf-lb-color: #4c51bf;
+}
+
+.sf_rb--indigo-700 {
+  --sf-rb-color: #4c51bf;
+}
+
 .sf_l--indigo-800 {
   --sf-l-color: #434190;
 }
@@ -1316,6 +2616,22 @@
 
 .sf_b--indigo-800 {
   --sf-b-color: #434190;
+}
+
+.sf_lt--indigo-800 {
+  --sf-lt-color: #434190;
+}
+
+.sf_rt--indigo-800 {
+  --sf-rt-color: #434190;
+}
+
+.sf_lb--indigo-800 {
+  --sf-lb-color: #434190;
+}
+
+.sf_rb--indigo-800 {
+  --sf-rb-color: #434190;
 }
 
 .sf_l--indigo-900 {
@@ -1334,6 +2650,22 @@
   --sf-b-color: #3c366b;
 }
 
+.sf_lt--indigo-900 {
+  --sf-lt-color: #3c366b;
+}
+
+.sf_rt--indigo-900 {
+  --sf-rt-color: #3c366b;
+}
+
+.sf_lb--indigo-900 {
+  --sf-lb-color: #3c366b;
+}
+
+.sf_rb--indigo-900 {
+  --sf-rb-color: #3c366b;
+}
+
 .sf_l--purple-100 {
   --sf-l-color: #faf5ff;
 }
@@ -1348,6 +2680,22 @@
 
 .sf_b--purple-100 {
   --sf-b-color: #faf5ff;
+}
+
+.sf_lt--purple-100 {
+  --sf-lt-color: #faf5ff;
+}
+
+.sf_rt--purple-100 {
+  --sf-rt-color: #faf5ff;
+}
+
+.sf_lb--purple-100 {
+  --sf-lb-color: #faf5ff;
+}
+
+.sf_rb--purple-100 {
+  --sf-rb-color: #faf5ff;
 }
 
 .sf_l--purple-200 {
@@ -1366,6 +2714,22 @@
   --sf-b-color: #e9d8fd;
 }
 
+.sf_lt--purple-200 {
+  --sf-lt-color: #e9d8fd;
+}
+
+.sf_rt--purple-200 {
+  --sf-rt-color: #e9d8fd;
+}
+
+.sf_lb--purple-200 {
+  --sf-lb-color: #e9d8fd;
+}
+
+.sf_rb--purple-200 {
+  --sf-rb-color: #e9d8fd;
+}
+
 .sf_l--purple-300 {
   --sf-l-color: #d6bcfa;
 }
@@ -1380,6 +2744,22 @@
 
 .sf_b--purple-300 {
   --sf-b-color: #d6bcfa;
+}
+
+.sf_lt--purple-300 {
+  --sf-lt-color: #d6bcfa;
+}
+
+.sf_rt--purple-300 {
+  --sf-rt-color: #d6bcfa;
+}
+
+.sf_lb--purple-300 {
+  --sf-lb-color: #d6bcfa;
+}
+
+.sf_rb--purple-300 {
+  --sf-rb-color: #d6bcfa;
 }
 
 .sf_l--purple-400 {
@@ -1398,6 +2778,22 @@
   --sf-b-color: #b794f4;
 }
 
+.sf_lt--purple-400 {
+  --sf-lt-color: #b794f4;
+}
+
+.sf_rt--purple-400 {
+  --sf-rt-color: #b794f4;
+}
+
+.sf_lb--purple-400 {
+  --sf-lb-color: #b794f4;
+}
+
+.sf_rb--purple-400 {
+  --sf-rb-color: #b794f4;
+}
+
 .sf_l--purple-500 {
   --sf-l-color: #9f7aea;
 }
@@ -1412,6 +2808,22 @@
 
 .sf_b--purple-500 {
   --sf-b-color: #9f7aea;
+}
+
+.sf_lt--purple-500 {
+  --sf-lt-color: #9f7aea;
+}
+
+.sf_rt--purple-500 {
+  --sf-rt-color: #9f7aea;
+}
+
+.sf_lb--purple-500 {
+  --sf-lb-color: #9f7aea;
+}
+
+.sf_rb--purple-500 {
+  --sf-rb-color: #9f7aea;
 }
 
 .sf_l--purple-600 {
@@ -1430,6 +2842,22 @@
   --sf-b-color: #805ad5;
 }
 
+.sf_lt--purple-600 {
+  --sf-lt-color: #805ad5;
+}
+
+.sf_rt--purple-600 {
+  --sf-rt-color: #805ad5;
+}
+
+.sf_lb--purple-600 {
+  --sf-lb-color: #805ad5;
+}
+
+.sf_rb--purple-600 {
+  --sf-rb-color: #805ad5;
+}
+
 .sf_l--purple-700 {
   --sf-l-color: #6b46c1;
 }
@@ -1444,6 +2872,22 @@
 
 .sf_b--purple-700 {
   --sf-b-color: #6b46c1;
+}
+
+.sf_lt--purple-700 {
+  --sf-lt-color: #6b46c1;
+}
+
+.sf_rt--purple-700 {
+  --sf-rt-color: #6b46c1;
+}
+
+.sf_lb--purple-700 {
+  --sf-lb-color: #6b46c1;
+}
+
+.sf_rb--purple-700 {
+  --sf-rb-color: #6b46c1;
 }
 
 .sf_l--purple-800 {
@@ -1462,6 +2906,22 @@
   --sf-b-color: #553c9a;
 }
 
+.sf_lt--purple-800 {
+  --sf-lt-color: #553c9a;
+}
+
+.sf_rt--purple-800 {
+  --sf-rt-color: #553c9a;
+}
+
+.sf_lb--purple-800 {
+  --sf-lb-color: #553c9a;
+}
+
+.sf_rb--purple-800 {
+  --sf-rb-color: #553c9a;
+}
+
 .sf_l--purple-900 {
   --sf-l-color: #44337a;
 }
@@ -1476,6 +2936,22 @@
 
 .sf_b--purple-900 {
   --sf-b-color: #44337a;
+}
+
+.sf_lt--purple-900 {
+  --sf-lt-color: #44337a;
+}
+
+.sf_rt--purple-900 {
+  --sf-rt-color: #44337a;
+}
+
+.sf_lb--purple-900 {
+  --sf-lb-color: #44337a;
+}
+
+.sf_rb--purple-900 {
+  --sf-rb-color: #44337a;
 }
 
 .sf_l--pink-100 {
@@ -1494,6 +2970,22 @@
   --sf-b-color: #fff5f7;
 }
 
+.sf_lt--pink-100 {
+  --sf-lt-color: #fff5f7;
+}
+
+.sf_rt--pink-100 {
+  --sf-rt-color: #fff5f7;
+}
+
+.sf_lb--pink-100 {
+  --sf-lb-color: #fff5f7;
+}
+
+.sf_rb--pink-100 {
+  --sf-rb-color: #fff5f7;
+}
+
 .sf_l--pink-200 {
   --sf-l-color: #fed7e2;
 }
@@ -1508,6 +3000,22 @@
 
 .sf_b--pink-200 {
   --sf-b-color: #fed7e2;
+}
+
+.sf_lt--pink-200 {
+  --sf-lt-color: #fed7e2;
+}
+
+.sf_rt--pink-200 {
+  --sf-rt-color: #fed7e2;
+}
+
+.sf_lb--pink-200 {
+  --sf-lb-color: #fed7e2;
+}
+
+.sf_rb--pink-200 {
+  --sf-rb-color: #fed7e2;
 }
 
 .sf_l--pink-300 {
@@ -1526,6 +3034,22 @@
   --sf-b-color: #fbb6ce;
 }
 
+.sf_lt--pink-300 {
+  --sf-lt-color: #fbb6ce;
+}
+
+.sf_rt--pink-300 {
+  --sf-rt-color: #fbb6ce;
+}
+
+.sf_lb--pink-300 {
+  --sf-lb-color: #fbb6ce;
+}
+
+.sf_rb--pink-300 {
+  --sf-rb-color: #fbb6ce;
+}
+
 .sf_l--pink-400 {
   --sf-l-color: #f687b3;
 }
@@ -1540,6 +3064,22 @@
 
 .sf_b--pink-400 {
   --sf-b-color: #f687b3;
+}
+
+.sf_lt--pink-400 {
+  --sf-lt-color: #f687b3;
+}
+
+.sf_rt--pink-400 {
+  --sf-rt-color: #f687b3;
+}
+
+.sf_lb--pink-400 {
+  --sf-lb-color: #f687b3;
+}
+
+.sf_rb--pink-400 {
+  --sf-rb-color: #f687b3;
 }
 
 .sf_l--pink-500 {
@@ -1558,6 +3098,22 @@
   --sf-b-color: #ed64a6;
 }
 
+.sf_lt--pink-500 {
+  --sf-lt-color: #ed64a6;
+}
+
+.sf_rt--pink-500 {
+  --sf-rt-color: #ed64a6;
+}
+
+.sf_lb--pink-500 {
+  --sf-lb-color: #ed64a6;
+}
+
+.sf_rb--pink-500 {
+  --sf-rb-color: #ed64a6;
+}
+
 .sf_l--pink-600 {
   --sf-l-color: #d53f8c;
 }
@@ -1572,6 +3128,22 @@
 
 .sf_b--pink-600 {
   --sf-b-color: #d53f8c;
+}
+
+.sf_lt--pink-600 {
+  --sf-lt-color: #d53f8c;
+}
+
+.sf_rt--pink-600 {
+  --sf-rt-color: #d53f8c;
+}
+
+.sf_lb--pink-600 {
+  --sf-lb-color: #d53f8c;
+}
+
+.sf_rb--pink-600 {
+  --sf-rb-color: #d53f8c;
 }
 
 .sf_l--pink-700 {
@@ -1590,6 +3162,22 @@
   --sf-b-color: #b83280;
 }
 
+.sf_lt--pink-700 {
+  --sf-lt-color: #b83280;
+}
+
+.sf_rt--pink-700 {
+  --sf-rt-color: #b83280;
+}
+
+.sf_lb--pink-700 {
+  --sf-lb-color: #b83280;
+}
+
+.sf_rb--pink-700 {
+  --sf-rb-color: #b83280;
+}
+
 .sf_l--pink-800 {
   --sf-l-color: #97266d;
 }
@@ -1604,6 +3192,22 @@
 
 .sf_b--pink-800 {
   --sf-b-color: #97266d;
+}
+
+.sf_lt--pink-800 {
+  --sf-lt-color: #97266d;
+}
+
+.sf_rt--pink-800 {
+  --sf-rt-color: #97266d;
+}
+
+.sf_lb--pink-800 {
+  --sf-lb-color: #97266d;
+}
+
+.sf_rb--pink-800 {
+  --sf-rb-color: #97266d;
 }
 
 .sf_l--pink-900 {
@@ -1622,6 +3226,22 @@
   --sf-b-color: #702459;
 }
 
+.sf_lt--pink-900 {
+  --sf-lt-color: #702459;
+}
+
+.sf_rt--pink-900 {
+  --sf-rt-color: #702459;
+}
+
+.sf_lb--pink-900 {
+  --sf-lb-color: #702459;
+}
+
+.sf_rb--pink-900 {
+  --sf-rb-color: #702459;
+}
+
 .sf_l--black {
   --sf-l-color: #000;
 }
@@ -1636,6 +3256,22 @@
 
 .sf_b--black {
   --sf-b-color: #000;
+}
+
+.sf_lt--black {
+  --sf-lt-color: #000;
+}
+
+.sf_rt--black {
+  --sf-rt-color: #000;
+}
+
+.sf_lb--black {
+  --sf-lb-color: #000;
+}
+
+.sf_rb--black {
+  --sf-rb-color: #000;
 }
 
 .sf_l--white {
@@ -1654,6 +3290,22 @@
   --sf-b-color: #fff;
 }
 
+.sf_lt--white {
+  --sf-lt-color: #fff;
+}
+
+.sf_rt--white {
+  --sf-rt-color: #fff;
+}
+
+.sf_lb--white {
+  --sf-lb-color: #fff;
+}
+
+.sf_rb--white {
+  --sf-rb-color: #fff;
+}
+
 .sf_l--inner {
   --sf-l-inner: inset;
 }
@@ -1668,6 +3320,22 @@
 
 .sf_b--inner {
   --sf-b-inner: inset;
+}
+
+.sf_lt--inner {
+  --sf-lt-inner: inset;
+}
+
+.sf_rt--inner {
+  --sf-rt-inner: inset;
+}
+
+.sf_lb--inner {
+  --sf-lb-inner: inset;
+}
+
+.sf_rb--inner {
+  --sf-rb-inner: inset;
 }
 
 /*# sourceMappingURL=output.css.map */

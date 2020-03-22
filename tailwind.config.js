@@ -1,3 +1,4 @@
+const plugin = require('tailwindcss/plugin')
 module.exports = {
   prefix: '',
   important: false,
@@ -688,7 +689,8 @@ module.exports = {
     transitionProperty: ['responsive'],
     transitionTimingFunction: ['responsive'],
     transitionDuration: ['responsive'],
+    neomorphism: ['responsive', 'hover', 'focus', 'active']
   },
   corePlugins: {},
-  plugins: [],
+  plugins: [plugin(require("./src/js/index.js"))],
 }

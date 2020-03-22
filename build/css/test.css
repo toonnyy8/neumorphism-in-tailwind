@@ -13484,7 +13484,7 @@
   --nmp-shadow-blur: calc(2 * var(--nmp-size))
 }
 
-.nmp-blur-lg {
+.nmp-blur-md {
   --nmp-light-blur: calc(3 * var(--nmp-size));
   --nmp-shadow-blur: calc(3 * var(--nmp-size))
 }
@@ -13497,7 +13497,7 @@
   --nmp-light-blur: calc(2 * var(--nmp-size))
 }
 
-.nmp-light-blur-lg {
+.nmp-light-blur-md {
   --nmp-light-blur: calc(3 * var(--nmp-size))
 }
 
@@ -13509,7 +13509,7 @@
   --nmp-shadow-blur: calc(2 * var(--nmp-size))
 }
 
-.nmp-shadow-blur-lg {
+.nmp-shadow-blur-md {
   --nmp-shadow-blur: calc(3 * var(--nmp-size))
 }
 
@@ -14420,7 +14420,7 @@
   --nmp-shadow-blur: calc(2 * var(--nmp-size))
 }
 
-.hover\:nmp-blur-lg:hover {
+.hover\:nmp-blur-md:hover {
   --nmp-light-blur: calc(3 * var(--nmp-size));
   --nmp-shadow-blur: calc(3 * var(--nmp-size))
 }
@@ -14433,7 +14433,7 @@
   --nmp-light-blur: calc(2 * var(--nmp-size))
 }
 
-.hover\:nmp-light-blur-lg:hover {
+.hover\:nmp-light-blur-md:hover {
   --nmp-light-blur: calc(3 * var(--nmp-size))
 }
 
@@ -14445,7 +14445,7 @@
   --nmp-shadow-blur: calc(2 * var(--nmp-size))
 }
 
-.hover\:nmp-shadow-blur-lg:hover {
+.hover\:nmp-shadow-blur-md:hover {
   --nmp-shadow-blur: calc(3 * var(--nmp-size))
 }
 
@@ -15356,7 +15356,7 @@
   --nmp-shadow-blur: calc(2 * var(--nmp-size))
 }
 
-.focus\:nmp-blur-lg:focus {
+.focus\:nmp-blur-md:focus {
   --nmp-light-blur: calc(3 * var(--nmp-size));
   --nmp-shadow-blur: calc(3 * var(--nmp-size))
 }
@@ -15369,7 +15369,7 @@
   --nmp-light-blur: calc(2 * var(--nmp-size))
 }
 
-.focus\:nmp-light-blur-lg:focus {
+.focus\:nmp-light-blur-md:focus {
   --nmp-light-blur: calc(3 * var(--nmp-size))
 }
 
@@ -15381,7 +15381,7 @@
   --nmp-shadow-blur: calc(2 * var(--nmp-size))
 }
 
-.focus\:nmp-shadow-blur-lg:focus {
+.focus\:nmp-shadow-blur-md:focus {
   --nmp-shadow-blur: calc(3 * var(--nmp-size))
 }
 
@@ -16292,7 +16292,7 @@
   --nmp-shadow-blur: calc(2 * var(--nmp-size))
 }
 
-.active\:nmp-blur-lg:active {
+.active\:nmp-blur-md:active {
   --nmp-light-blur: calc(3 * var(--nmp-size));
   --nmp-shadow-blur: calc(3 * var(--nmp-size))
 }
@@ -16305,7 +16305,7 @@
   --nmp-light-blur: calc(2 * var(--nmp-size))
 }
 
-.active\:nmp-light-blur-lg:active {
+.active\:nmp-light-blur-md:active {
   --nmp-light-blur: calc(3 * var(--nmp-size))
 }
 
@@ -16317,7 +16317,7 @@
   --nmp-shadow-blur: calc(2 * var(--nmp-size))
 }
 
-.active\:nmp-shadow-blur-lg:active {
+.active\:nmp-shadow-blur-md:active {
   --nmp-shadow-blur: calc(3 * var(--nmp-size))
 }
 
@@ -30552,7 +30552,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .sm\:nmp-blur-lg {
+  .sm\:nmp-blur-md {
     --nmp-light-blur: calc(3 * var(--nmp-size));
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
@@ -30565,7 +30565,7 @@
     --nmp-light-blur: calc(2 * var(--nmp-size))
   }
 
-  .sm\:nmp-light-blur-lg {
+  .sm\:nmp-light-blur-md {
     --nmp-light-blur: calc(3 * var(--nmp-size))
   }
 
@@ -30577,7 +30577,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .sm\:nmp-shadow-blur-lg {
+  .sm\:nmp-shadow-blur-md {
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
 
@@ -31488,7 +31488,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .sm\:hover\:nmp-blur-lg:hover {
+  .sm\:hover\:nmp-blur-md:hover {
     --nmp-light-blur: calc(3 * var(--nmp-size));
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
@@ -31501,7 +31501,7 @@
     --nmp-light-blur: calc(2 * var(--nmp-size))
   }
 
-  .sm\:hover\:nmp-light-blur-lg:hover {
+  .sm\:hover\:nmp-light-blur-md:hover {
     --nmp-light-blur: calc(3 * var(--nmp-size))
   }
 
@@ -31513,7 +31513,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .sm\:hover\:nmp-shadow-blur-lg:hover {
+  .sm\:hover\:nmp-shadow-blur-md:hover {
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
 
@@ -32424,7 +32424,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .sm\:focus\:nmp-blur-lg:focus {
+  .sm\:focus\:nmp-blur-md:focus {
     --nmp-light-blur: calc(3 * var(--nmp-size));
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
@@ -32437,7 +32437,7 @@
     --nmp-light-blur: calc(2 * var(--nmp-size))
   }
 
-  .sm\:focus\:nmp-light-blur-lg:focus {
+  .sm\:focus\:nmp-light-blur-md:focus {
     --nmp-light-blur: calc(3 * var(--nmp-size))
   }
 
@@ -32449,7 +32449,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .sm\:focus\:nmp-shadow-blur-lg:focus {
+  .sm\:focus\:nmp-shadow-blur-md:focus {
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
 
@@ -33360,7 +33360,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .sm\:active\:nmp-blur-lg:active {
+  .sm\:active\:nmp-blur-md:active {
     --nmp-light-blur: calc(3 * var(--nmp-size));
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
@@ -33373,7 +33373,7 @@
     --nmp-light-blur: calc(2 * var(--nmp-size))
   }
 
-  .sm\:active\:nmp-light-blur-lg:active {
+  .sm\:active\:nmp-light-blur-md:active {
     --nmp-light-blur: calc(3 * var(--nmp-size))
   }
 
@@ -33385,7 +33385,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .sm\:active\:nmp-shadow-blur-lg:active {
+  .sm\:active\:nmp-shadow-blur-md:active {
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
 
@@ -47621,7 +47621,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .md\:nmp-blur-lg {
+  .md\:nmp-blur-md {
     --nmp-light-blur: calc(3 * var(--nmp-size));
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
@@ -47634,7 +47634,7 @@
     --nmp-light-blur: calc(2 * var(--nmp-size))
   }
 
-  .md\:nmp-light-blur-lg {
+  .md\:nmp-light-blur-md {
     --nmp-light-blur: calc(3 * var(--nmp-size))
   }
 
@@ -47646,7 +47646,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .md\:nmp-shadow-blur-lg {
+  .md\:nmp-shadow-blur-md {
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
 
@@ -48557,7 +48557,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .md\:hover\:nmp-blur-lg:hover {
+  .md\:hover\:nmp-blur-md:hover {
     --nmp-light-blur: calc(3 * var(--nmp-size));
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
@@ -48570,7 +48570,7 @@
     --nmp-light-blur: calc(2 * var(--nmp-size))
   }
 
-  .md\:hover\:nmp-light-blur-lg:hover {
+  .md\:hover\:nmp-light-blur-md:hover {
     --nmp-light-blur: calc(3 * var(--nmp-size))
   }
 
@@ -48582,7 +48582,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .md\:hover\:nmp-shadow-blur-lg:hover {
+  .md\:hover\:nmp-shadow-blur-md:hover {
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
 
@@ -49493,7 +49493,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .md\:focus\:nmp-blur-lg:focus {
+  .md\:focus\:nmp-blur-md:focus {
     --nmp-light-blur: calc(3 * var(--nmp-size));
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
@@ -49506,7 +49506,7 @@
     --nmp-light-blur: calc(2 * var(--nmp-size))
   }
 
-  .md\:focus\:nmp-light-blur-lg:focus {
+  .md\:focus\:nmp-light-blur-md:focus {
     --nmp-light-blur: calc(3 * var(--nmp-size))
   }
 
@@ -49518,7 +49518,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .md\:focus\:nmp-shadow-blur-lg:focus {
+  .md\:focus\:nmp-shadow-blur-md:focus {
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
 
@@ -50429,7 +50429,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .md\:active\:nmp-blur-lg:active {
+  .md\:active\:nmp-blur-md:active {
     --nmp-light-blur: calc(3 * var(--nmp-size));
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
@@ -50442,7 +50442,7 @@
     --nmp-light-blur: calc(2 * var(--nmp-size))
   }
 
-  .md\:active\:nmp-light-blur-lg:active {
+  .md\:active\:nmp-light-blur-md:active {
     --nmp-light-blur: calc(3 * var(--nmp-size))
   }
 
@@ -50454,7 +50454,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .md\:active\:nmp-shadow-blur-lg:active {
+  .md\:active\:nmp-shadow-blur-md:active {
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
 
@@ -64690,7 +64690,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .lg\:nmp-blur-lg {
+  .lg\:nmp-blur-md {
     --nmp-light-blur: calc(3 * var(--nmp-size));
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
@@ -64703,7 +64703,7 @@
     --nmp-light-blur: calc(2 * var(--nmp-size))
   }
 
-  .lg\:nmp-light-blur-lg {
+  .lg\:nmp-light-blur-md {
     --nmp-light-blur: calc(3 * var(--nmp-size))
   }
 
@@ -64715,7 +64715,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .lg\:nmp-shadow-blur-lg {
+  .lg\:nmp-shadow-blur-md {
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
 
@@ -65626,7 +65626,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .lg\:hover\:nmp-blur-lg:hover {
+  .lg\:hover\:nmp-blur-md:hover {
     --nmp-light-blur: calc(3 * var(--nmp-size));
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
@@ -65639,7 +65639,7 @@
     --nmp-light-blur: calc(2 * var(--nmp-size))
   }
 
-  .lg\:hover\:nmp-light-blur-lg:hover {
+  .lg\:hover\:nmp-light-blur-md:hover {
     --nmp-light-blur: calc(3 * var(--nmp-size))
   }
 
@@ -65651,7 +65651,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .lg\:hover\:nmp-shadow-blur-lg:hover {
+  .lg\:hover\:nmp-shadow-blur-md:hover {
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
 
@@ -66562,7 +66562,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .lg\:focus\:nmp-blur-lg:focus {
+  .lg\:focus\:nmp-blur-md:focus {
     --nmp-light-blur: calc(3 * var(--nmp-size));
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
@@ -66575,7 +66575,7 @@
     --nmp-light-blur: calc(2 * var(--nmp-size))
   }
 
-  .lg\:focus\:nmp-light-blur-lg:focus {
+  .lg\:focus\:nmp-light-blur-md:focus {
     --nmp-light-blur: calc(3 * var(--nmp-size))
   }
 
@@ -66587,7 +66587,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .lg\:focus\:nmp-shadow-blur-lg:focus {
+  .lg\:focus\:nmp-shadow-blur-md:focus {
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
 
@@ -67498,7 +67498,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .lg\:active\:nmp-blur-lg:active {
+  .lg\:active\:nmp-blur-md:active {
     --nmp-light-blur: calc(3 * var(--nmp-size));
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
@@ -67511,7 +67511,7 @@
     --nmp-light-blur: calc(2 * var(--nmp-size))
   }
 
-  .lg\:active\:nmp-light-blur-lg:active {
+  .lg\:active\:nmp-light-blur-md:active {
     --nmp-light-blur: calc(3 * var(--nmp-size))
   }
 
@@ -67523,7 +67523,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .lg\:active\:nmp-shadow-blur-lg:active {
+  .lg\:active\:nmp-shadow-blur-md:active {
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
 
@@ -81759,7 +81759,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .xl\:nmp-blur-lg {
+  .xl\:nmp-blur-md {
     --nmp-light-blur: calc(3 * var(--nmp-size));
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
@@ -81772,7 +81772,7 @@
     --nmp-light-blur: calc(2 * var(--nmp-size))
   }
 
-  .xl\:nmp-light-blur-lg {
+  .xl\:nmp-light-blur-md {
     --nmp-light-blur: calc(3 * var(--nmp-size))
   }
 
@@ -81784,7 +81784,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .xl\:nmp-shadow-blur-lg {
+  .xl\:nmp-shadow-blur-md {
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
 
@@ -82695,7 +82695,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .xl\:hover\:nmp-blur-lg:hover {
+  .xl\:hover\:nmp-blur-md:hover {
     --nmp-light-blur: calc(3 * var(--nmp-size));
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
@@ -82708,7 +82708,7 @@
     --nmp-light-blur: calc(2 * var(--nmp-size))
   }
 
-  .xl\:hover\:nmp-light-blur-lg:hover {
+  .xl\:hover\:nmp-light-blur-md:hover {
     --nmp-light-blur: calc(3 * var(--nmp-size))
   }
 
@@ -82720,7 +82720,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .xl\:hover\:nmp-shadow-blur-lg:hover {
+  .xl\:hover\:nmp-shadow-blur-md:hover {
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
 
@@ -83631,7 +83631,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .xl\:focus\:nmp-blur-lg:focus {
+  .xl\:focus\:nmp-blur-md:focus {
     --nmp-light-blur: calc(3 * var(--nmp-size));
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
@@ -83644,7 +83644,7 @@
     --nmp-light-blur: calc(2 * var(--nmp-size))
   }
 
-  .xl\:focus\:nmp-light-blur-lg:focus {
+  .xl\:focus\:nmp-light-blur-md:focus {
     --nmp-light-blur: calc(3 * var(--nmp-size))
   }
 
@@ -83656,7 +83656,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .xl\:focus\:nmp-shadow-blur-lg:focus {
+  .xl\:focus\:nmp-shadow-blur-md:focus {
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
 
@@ -84567,7 +84567,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .xl\:active\:nmp-blur-lg:active {
+  .xl\:active\:nmp-blur-md:active {
     --nmp-light-blur: calc(3 * var(--nmp-size));
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
@@ -84580,7 +84580,7 @@
     --nmp-light-blur: calc(2 * var(--nmp-size))
   }
 
-  .xl\:active\:nmp-light-blur-lg:active {
+  .xl\:active\:nmp-light-blur-md:active {
     --nmp-light-blur: calc(3 * var(--nmp-size))
   }
 
@@ -84592,7 +84592,7 @@
     --nmp-shadow-blur: calc(2 * var(--nmp-size))
   }
 
-  .xl\:active\:nmp-shadow-blur-lg:active {
+  .xl\:active\:nmp-shadow-blur-md:active {
     --nmp-shadow-blur: calc(3 * var(--nmp-size))
   }
 

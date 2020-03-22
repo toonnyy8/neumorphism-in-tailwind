@@ -164,7 +164,7 @@ module.exports = ({ addUtilities, variants, theme }) => {
             "--nmp-shadow-blur": "calc(2 * var(--nmp-size))",
         },
 
-        ".nmp-blur-lg": {
+        ".nmp-blur-md": {
             "--nmp-light-blur": "calc(3 * var(--nmp-size))",
             "--nmp-shadow-blur": "calc(3 * var(--nmp-size))",
         },
@@ -177,7 +177,7 @@ module.exports = ({ addUtilities, variants, theme }) => {
             "--nmp-light-blur": "calc(2 * var(--nmp-size))",
         },
 
-        ".nmp-light-blur-lg": {
+        ".nmp-light-blur-md": {
             "--nmp-light-blur": "calc(3 * var(--nmp-size))",
         },
 
@@ -189,7 +189,7 @@ module.exports = ({ addUtilities, variants, theme }) => {
             "--nmp-shadow-blur": "calc(2 * var(--nmp-size))",
         },
 
-        ".nmp-shadow-blur-lg": {
+        ".nmp-shadow-blur-md": {
             "--nmp-shadow-blur": "calc(3 * var(--nmp-size))",
         },
     }

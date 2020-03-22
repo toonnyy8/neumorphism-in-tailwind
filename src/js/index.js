@@ -1,5 +1,4 @@
 
-console.log("neomorphism")
 module.exports = ({ addUtilities, variants, theme }) => {
     let neomorphismUtilities = {
         ".neomorphism": {
@@ -208,7 +207,7 @@ module.exports = ({ addUtilities, variants, theme }) => {
     addUtilities(
         neomorphismUtilities,
         {
-            variants: variants("neomorphism")
+            variants: variants("neomorphism") || ['responsive', 'hover', 'focus', 'active']
         }
     )
 }

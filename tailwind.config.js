@@ -1,4 +1,3 @@
-const plugin = require('tailwindcss/plugin')
 module.exports = {
   prefix: '',
   important: false,
@@ -692,5 +691,5 @@ module.exports = {
     neomorphism: ['responsive', 'hover', 'focus', 'active']
   },
   corePlugins: {},
-  plugins: [plugin(require("./src/js/index.js"))],
+  plugins: [require("./src/js/index.js")],
 }

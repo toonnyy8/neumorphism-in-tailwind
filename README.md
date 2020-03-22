@@ -38,21 +38,23 @@ module.exports = {
 ### 參數
 
 #### .nmp-[ l | r | t | b | lt | rt | lb | rb ] : 光線位置
-> ##### 無預設
+> 無預設
 
 #### .nmp-[ inner | outer ] : 凹入 | 凸出
-> ##### 預設為 outer
+> 預設為 outer
 
 #### .nmp-[ xs | sm | base | md | lg | xl | 2xl | 3xl | 4xl | 5xl | 6xl ] : 範圍大小
-> ##### 無預設
+> 無預設
 
 #### .nmp-[ light | shadow ]-[ &lt;color&gt; ] : 光亮處 | 陰影處的顏色
-> ##### 預設為 transparent  
+> 預設為 transparent  
 
 #### .nmp-[ light | shadow ]-blur-[ sm | base | md ] : 光亮處 | 陰影處的模糊程度
+> 預設為 base
 
-> ##### 預設為 base
+#### .nmp-blur-[ sm | base | md ] : 光亮處與陰影處的模糊程度
 
+> 預設為 base
 ---
 
 [範例](https://toonnyy8.github.io/neomorphism-in-tailwind/)

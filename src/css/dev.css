@@ -26,6 +26,50 @@ disabled {
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
     }
+
+    .neomorphism-drop {
+        --nmp-light: rgba(0, 0, 0, 0);
+        --nmp-shadow: rgba(0, 0, 0, 0);
+        --nmp-size: 0px;
+        --nmp-light-blur: calc(2 * var(--nmp-size));
+        --nmp-shadow-blur: calc(2 * var(--nmp-size));
+        --nmp-light-w: 0;
+        --nmp-light-h: 0;
+        --nmp-shadow-w: 0;
+        --nmp-shadow-h: 0;
+        -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+        filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    }
+
+    .neomorphism-text {
+        --nmp-light: rgba(0, 0, 0, 0);
+        --nmp-shadow: rgba(0, 0, 0, 0);
+        --nmp-size: 0px;
+        --nmp-light-blur: calc(2 * var(--nmp-size));
+        --nmp-shadow-blur: calc(2 * var(--nmp-size));
+        --nmp-light-w: 0;
+        --nmp-light-h: 0;
+        --nmp-shadow-w: 0;
+        --nmp-shadow-h: 0;
+        text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+    }
 }
 @variants responsive,
 group-hover,

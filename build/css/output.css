@@ -15,6 +15,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
 }
 
+.neomorphism-drop {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+}
+
+.neomorphism-text {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+}
+
 .group:hover .group-hover\:neomorphism {
   --nmp-light: rgba(0, 0, 0, 0);
   --nmp-shadow: rgba(0, 0, 0, 0);
@@ -30,6 +74,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+}
+
+.group:hover .group-hover\:neomorphism-drop {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+}
+
+.group:hover .group-hover\:neomorphism-text {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
 }
 
 .focus-within\:neomorphism:focus-within {
@@ -49,6 +137,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
 }
 
+.focus-within\:neomorphism-drop:focus-within {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+}
+
+.focus-within\:neomorphism-text:focus-within {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+}
+
 .first\:neomorphism:first-child {
   --nmp-light: rgba(0, 0, 0, 0);
   --nmp-shadow: rgba(0, 0, 0, 0);
@@ -64,6 +196,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+}
+
+.first\:neomorphism-drop:first-child {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+}
+
+.first\:neomorphism-text:first-child {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
 }
 
 .last\:neomorphism:last-child {
@@ -83,6 +259,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
 }
 
+.last\:neomorphism-drop:last-child {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+}
+
+.last\:neomorphism-text:last-child {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+}
+
 .odd\:neomorphism:nth-child(odd) {
   --nmp-light: rgba(0, 0, 0, 0);
   --nmp-shadow: rgba(0, 0, 0, 0);
@@ -98,6 +318,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+}
+
+.odd\:neomorphism-drop:nth-child(odd) {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+}
+
+.odd\:neomorphism-text:nth-child(odd) {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
 }
 
 .even\:neomorphism:nth-child(even) {
@@ -117,6 +381,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
 }
 
+.even\:neomorphism-drop:nth-child(even) {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+}
+
+.even\:neomorphism-text:nth-child(even) {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+}
+
 .hover\:neomorphism:hover {
   --nmp-light: rgba(0, 0, 0, 0);
   --nmp-shadow: rgba(0, 0, 0, 0);
@@ -132,6 +440,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+}
+
+.hover\:neomorphism-drop:hover {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+}
+
+.hover\:neomorphism-text:hover {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
 }
 
 .focus\:neomorphism:focus {
@@ -151,6 +503,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
 }
 
+.focus\:neomorphism-drop:focus {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+}
+
+.focus\:neomorphism-text:focus {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+}
+
 .active\:neomorphism:active {
   --nmp-light: rgba(0, 0, 0, 0);
   --nmp-shadow: rgba(0, 0, 0, 0);
@@ -166,6 +562,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+}
+
+.active\:neomorphism-drop:active {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+}
+
+.active\:neomorphism-text:active {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
 }
 
 .visited\:neomorphism:visited {
@@ -185,6 +625,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
 }
 
+.visited\:neomorphism-drop:visited {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+}
+
+.visited\:neomorphism-text:visited {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+}
+
 .disabled\:neomorphism:disabled {
   --nmp-light: rgba(0, 0, 0, 0);
   --nmp-shadow: rgba(0, 0, 0, 0);
@@ -200,6 +684,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+}
+
+.disabled\:neomorphism-drop:disabled {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+}
+
+.disabled\:neomorphism-text:disabled {
+  --nmp-light: rgba(0, 0, 0, 0);
+  --nmp-shadow: rgba(0, 0, 0, 0);
+  --nmp-size: 0px;
+  --nmp-light-blur: calc(2 * var(--nmp-size));
+  --nmp-shadow-blur: calc(2 * var(--nmp-size));
+  --nmp-light-w: 0;
+  --nmp-light-h: 0;
+  --nmp-shadow-w: 0;
+  --nmp-shadow-h: 0;
+  text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
 }
 
 .nmp-l {
@@ -10816,6 +11344,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .sm\:neomorphism-drop {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .sm\:neomorphism-text {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .group:hover .sm\:group-hover\:neomorphism {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -10831,6 +11403,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .group:hover .sm\:group-hover\:neomorphism-drop {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .group:hover .sm\:group-hover\:neomorphism-text {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .sm\:focus-within\:neomorphism:focus-within {
@@ -10850,6 +11466,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .sm\:focus-within\:neomorphism-drop:focus-within {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .sm\:focus-within\:neomorphism-text:focus-within {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .sm\:first\:neomorphism:first-child {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -10865,6 +11525,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .sm\:first\:neomorphism-drop:first-child {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .sm\:first\:neomorphism-text:first-child {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .sm\:last\:neomorphism:last-child {
@@ -10884,6 +11588,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .sm\:last\:neomorphism-drop:last-child {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .sm\:last\:neomorphism-text:last-child {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .sm\:odd\:neomorphism:nth-child(odd) {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -10899,6 +11647,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .sm\:odd\:neomorphism-drop:nth-child(odd) {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .sm\:odd\:neomorphism-text:nth-child(odd) {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .sm\:even\:neomorphism:nth-child(even) {
@@ -10918,6 +11710,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .sm\:even\:neomorphism-drop:nth-child(even) {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .sm\:even\:neomorphism-text:nth-child(even) {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .sm\:hover\:neomorphism:hover {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -10933,6 +11769,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .sm\:hover\:neomorphism-drop:hover {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .sm\:hover\:neomorphism-text:hover {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .sm\:focus\:neomorphism:focus {
@@ -10952,6 +11832,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .sm\:focus\:neomorphism-drop:focus {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .sm\:focus\:neomorphism-text:focus {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .sm\:active\:neomorphism:active {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -10967,6 +11891,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .sm\:active\:neomorphism-drop:active {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .sm\:active\:neomorphism-text:active {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .sm\:visited\:neomorphism:visited {
@@ -10986,6 +11954,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .sm\:visited\:neomorphism-drop:visited {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .sm\:visited\:neomorphism-text:visited {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .sm\:disabled\:neomorphism:disabled {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -11001,6 +12013,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .sm\:disabled\:neomorphism-drop:disabled {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .sm\:disabled\:neomorphism-text:disabled {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .sm\:nmp-l {
@@ -21618,6 +22674,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .md\:neomorphism-drop {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .md\:neomorphism-text {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .group:hover .md\:group-hover\:neomorphism {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -21633,6 +22733,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .group:hover .md\:group-hover\:neomorphism-drop {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .group:hover .md\:group-hover\:neomorphism-text {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .md\:focus-within\:neomorphism:focus-within {
@@ -21652,6 +22796,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .md\:focus-within\:neomorphism-drop:focus-within {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .md\:focus-within\:neomorphism-text:focus-within {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .md\:first\:neomorphism:first-child {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -21667,6 +22855,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .md\:first\:neomorphism-drop:first-child {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .md\:first\:neomorphism-text:first-child {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .md\:last\:neomorphism:last-child {
@@ -21686,6 +22918,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .md\:last\:neomorphism-drop:last-child {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .md\:last\:neomorphism-text:last-child {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .md\:odd\:neomorphism:nth-child(odd) {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -21701,6 +22977,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .md\:odd\:neomorphism-drop:nth-child(odd) {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .md\:odd\:neomorphism-text:nth-child(odd) {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .md\:even\:neomorphism:nth-child(even) {
@@ -21720,6 +23040,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .md\:even\:neomorphism-drop:nth-child(even) {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .md\:even\:neomorphism-text:nth-child(even) {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .md\:hover\:neomorphism:hover {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -21735,6 +23099,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .md\:hover\:neomorphism-drop:hover {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .md\:hover\:neomorphism-text:hover {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .md\:focus\:neomorphism:focus {
@@ -21754,6 +23162,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .md\:focus\:neomorphism-drop:focus {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .md\:focus\:neomorphism-text:focus {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .md\:active\:neomorphism:active {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -21769,6 +23221,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .md\:active\:neomorphism-drop:active {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .md\:active\:neomorphism-text:active {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .md\:visited\:neomorphism:visited {
@@ -21788,6 +23284,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .md\:visited\:neomorphism-drop:visited {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .md\:visited\:neomorphism-text:visited {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .md\:disabled\:neomorphism:disabled {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -21803,6 +23343,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .md\:disabled\:neomorphism-drop:disabled {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .md\:disabled\:neomorphism-text:disabled {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .md\:nmp-l {
@@ -32420,6 +34004,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .lg\:neomorphism-drop {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .lg\:neomorphism-text {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .group:hover .lg\:group-hover\:neomorphism {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -32435,6 +34063,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .group:hover .lg\:group-hover\:neomorphism-drop {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .group:hover .lg\:group-hover\:neomorphism-text {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .lg\:focus-within\:neomorphism:focus-within {
@@ -32454,6 +34126,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .lg\:focus-within\:neomorphism-drop:focus-within {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .lg\:focus-within\:neomorphism-text:focus-within {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .lg\:first\:neomorphism:first-child {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -32469,6 +34185,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .lg\:first\:neomorphism-drop:first-child {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .lg\:first\:neomorphism-text:first-child {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .lg\:last\:neomorphism:last-child {
@@ -32488,6 +34248,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .lg\:last\:neomorphism-drop:last-child {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .lg\:last\:neomorphism-text:last-child {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .lg\:odd\:neomorphism:nth-child(odd) {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -32503,6 +34307,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .lg\:odd\:neomorphism-drop:nth-child(odd) {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .lg\:odd\:neomorphism-text:nth-child(odd) {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .lg\:even\:neomorphism:nth-child(even) {
@@ -32522,6 +34370,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .lg\:even\:neomorphism-drop:nth-child(even) {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .lg\:even\:neomorphism-text:nth-child(even) {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .lg\:hover\:neomorphism:hover {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -32537,6 +34429,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .lg\:hover\:neomorphism-drop:hover {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .lg\:hover\:neomorphism-text:hover {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .lg\:focus\:neomorphism:focus {
@@ -32556,6 +34492,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .lg\:focus\:neomorphism-drop:focus {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .lg\:focus\:neomorphism-text:focus {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .lg\:active\:neomorphism:active {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -32571,6 +34551,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .lg\:active\:neomorphism-drop:active {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .lg\:active\:neomorphism-text:active {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .lg\:visited\:neomorphism:visited {
@@ -32590,6 +34614,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .lg\:visited\:neomorphism-drop:visited {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .lg\:visited\:neomorphism-text:visited {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .lg\:disabled\:neomorphism:disabled {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -32605,6 +34673,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .lg\:disabled\:neomorphism-drop:disabled {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .lg\:disabled\:neomorphism-text:disabled {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .lg\:nmp-l {
@@ -43222,6 +45334,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .xl\:neomorphism-drop {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .xl\:neomorphism-text {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .group:hover .xl\:group-hover\:neomorphism {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -43237,6 +45393,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .group:hover .xl\:group-hover\:neomorphism-drop {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .group:hover .xl\:group-hover\:neomorphism-text {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .xl\:focus-within\:neomorphism:focus-within {
@@ -43256,6 +45456,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .xl\:focus-within\:neomorphism-drop:focus-within {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .xl\:focus-within\:neomorphism-text:focus-within {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .xl\:first\:neomorphism:first-child {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -43271,6 +45515,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .xl\:first\:neomorphism-drop:first-child {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .xl\:first\:neomorphism-text:first-child {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .xl\:last\:neomorphism:last-child {
@@ -43290,6 +45578,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .xl\:last\:neomorphism-drop:last-child {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .xl\:last\:neomorphism-text:last-child {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .xl\:odd\:neomorphism:nth-child(odd) {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -43305,6 +45637,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .xl\:odd\:neomorphism-drop:nth-child(odd) {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .xl\:odd\:neomorphism-text:nth-child(odd) {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .xl\:even\:neomorphism:nth-child(even) {
@@ -43324,6 +45700,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .xl\:even\:neomorphism-drop:nth-child(even) {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .xl\:even\:neomorphism-text:nth-child(even) {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .xl\:hover\:neomorphism:hover {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -43339,6 +45759,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .xl\:hover\:neomorphism-drop:hover {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .xl\:hover\:neomorphism-text:hover {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .xl\:focus\:neomorphism:focus {
@@ -43358,6 +45822,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .xl\:focus\:neomorphism-drop:focus {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .xl\:focus\:neomorphism-text:focus {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .xl\:active\:neomorphism:active {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -43373,6 +45881,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .xl\:active\:neomorphism-drop:active {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .xl\:active\:neomorphism-text:active {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .xl\:visited\:neomorphism:visited {
@@ -43392,6 +45944,50 @@
                 var(--nmp-light-blur) var(--nmp-light);
   }
 
+  .xl\:visited\:neomorphism-drop:visited {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .xl\:visited\:neomorphism-text:visited {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
+  }
+
   .xl\:disabled\:neomorphism:disabled {
     --nmp-light: rgba(0, 0, 0, 0);
     --nmp-shadow: rgba(0, 0, 0, 0);
@@ -43407,6 +46003,50 @@
                 calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
             var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
                 var(--nmp-light-blur) var(--nmp-light);
+  }
+
+  .xl\:disabled\:neomorphism-drop:disabled {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    -webkit-filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+    filter: drop-shadow(
+                calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                    var(--nmp-shadow-blur) var(--nmp-shadow)
+            )
+            drop-shadow(
+                calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size))
+                    var(--nmp-light-blur) var(--nmp-light)
+            );
+  }
+
+  .xl\:disabled\:neomorphism-text:disabled {
+    --nmp-light: rgba(0, 0, 0, 0);
+    --nmp-shadow: rgba(0, 0, 0, 0);
+    --nmp-size: 0px;
+    --nmp-light-blur: calc(2 * var(--nmp-size));
+    --nmp-shadow-blur: calc(2 * var(--nmp-size));
+    --nmp-light-w: 0;
+    --nmp-light-h: 0;
+    --nmp-shadow-w: 0;
+    --nmp-shadow-h: 0;
+    text-shadow: calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size))
+                var(--nmp-shadow-blur) var(--nmp-shadow),
+            calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur)
+                var(--nmp-light);
   }
 
   .xl\:nmp-l {

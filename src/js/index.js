@@ -106,6 +106,10 @@ module.exports = ({ addUtilities, variants, theme }) => {
             "--nmp-inner": "inset",
         },
 
+        ".nmp-outer": {
+            "--nmp-inner": "",
+        },
+
         ".nmp-xs": {
             "--nmp-size": "3px",
         },
@@ -115,11 +119,15 @@ module.exports = ({ addUtilities, variants, theme }) => {
         },
 
         ".nmp-base": {
-            "--nmp-size": "12px",
+            "--nmp-size": "11px",
+        },
+
+        ".nmp-md": {
+            "--nmp-size": "15px",
         },
 
         ".nmp-lg": {
-            "--nmp-size": "18px",
+            "--nmp-size": "20px",
         },
 
         ".nmp-xl": {

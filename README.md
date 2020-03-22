@@ -29,3 +29,13 @@ module.exports = {
   ],
 }
 ```
+
+### .neomorphism
+### .neomorphism-drop
+### .neomorphism-text
+
+#### .nmp-[l/r/t/b/lt/rt/lb/rb] : 光線位置
+
+#### .nmp-[inner/outer] : 光線向內/向外
+
+#### .nmp-[xs/sm/base] : 光線向內/向外

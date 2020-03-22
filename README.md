@@ -29,11 +29,11 @@ module.exports = {
 ### 函數
 
 #### .neomorphism
-> ##### box-shadow
+> box-shadow
 #### .neomorphism-drop
-> ##### drop-shadow
+> drop-shadow
 #### .neomorphism-text
-> ##### text-shadow
+> text-shadow
 
 ### 參數
 

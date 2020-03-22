@@ -6,10 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "init": "tailwindcss init --full",
-    "build:scss": "sass src/scss/dev.scss src/css/dev.css",
-    "build:middle": "node ./src/js/index.js",
-    "build:css": "tailwindcss build src/css/dev.css -o build/css/output.css",
-    "build": "npm run build:scss && npm run build:middle && npm run build:css"
+    "build": "tailwindcss build src/css/dev.css -o build/css/output.css"
   },
   "repository": {
     "type": "git",

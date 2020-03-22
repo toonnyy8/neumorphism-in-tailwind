@@ -2,8 +2,8 @@
 module.exports = ({ addUtilities, variants, theme }) => {
     let neomorphismUtilities = {
         ".neomorphism": {
-            "--nmp-light": "rgba(0, 0, 0, 0)",
-            "--nmp-shadow": "rgba(0, 0, 0, 0)",
+            "--nmp-light-color": "rgba(0, 0, 0, 0)",
+            "--nmp-shadow-color": "rgba(0, 0, 0, 0)",
             "--nmp-inner": "",
             "--nmp-size": "0px",
             "--nmp-light-blur": "calc(2 * var(--nmp-size))",
@@ -13,12 +13,12 @@ module.exports = ({ addUtilities, variants, theme }) => {
             "--nmp-shadow-w": "0",
             "--nmp-shadow-h": "0",
             "box-shadow":
-                `var(--nmp-inner) calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
-                         var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur) var(--nmp-light)`
+                `var(--nmp-inner) calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow-color),
+                         var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur) var(--nmp-light-color)`
         },
         ".neomorphism-drop": {
-            "--nmp-light": "rgba(0, 0, 0, 0)",
-            "--nmp-shadow": "rgba(0, 0, 0, 0)",
+            "--nmp-light-color": "rgba(0, 0, 0, 0)",
+            "--nmp-shadow-color": "rgba(0, 0, 0, 0)",
             "--nmp-size": "0px",
             "--nmp-light-blur": "calc(2 * var(--nmp-size))",
             "--nmp-shadow-blur": "calc(2 * var(--nmp-size))",
@@ -27,15 +27,15 @@ module.exports = ({ addUtilities, variants, theme }) => {
             "--nmp-shadow-w": "0",
             "--nmp-shadow-h": "0",
             "-webkit-filter":
-                `drop-shadow(calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow))
-                         drop-shadow(calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur) var(--nmp-light))`,
+                `drop-shadow(calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow-color))
+                         drop-shadow(calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur) var(--nmp-light-color))`,
             "filter":
-                `drop-shadow(calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow))
-                         drop-shadow(calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur) var(--nmp-light))`,
+                `drop-shadow(calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow-color))
+                         drop-shadow(calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur) var(--nmp-light-color))`,
         },
         ".neomorphism-text": {
-            "--nmp-light": "rgba(0, 0, 0, 0)",
-            "--nmp-shadow": "rgba(0, 0, 0, 0)",
+            "--nmp-light-color": "rgba(0, 0, 0, 0)",
+            "--nmp-shadow-color": "rgba(0, 0, 0, 0)",
             "--nmp-size": "0px",
             "--nmp-light-blur": "calc(2 * var(--nmp-size))",
             "--nmp-shadow-blur": "calc(2 * var(--nmp-size))",
@@ -44,8 +44,8 @@ module.exports = ({ addUtilities, variants, theme }) => {
             "--nmp-shadow-w": "0",
             "--nmp-shadow-h": "0",
             "box-shadow":
-                `calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow),
-                         calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur) var(--nmp-light)`,
+                `calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow-color),
+                         calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur) var(--nmp-light-color)`,
         },
 
         ".nmp-l": {
@@ -200,12 +200,12 @@ module.exports = ({ addUtilities, variants, theme }) => {
         Object.keys(colors).forEach(color => {
             if (typeof colors[color] == "string") {
                 neomorphismUtilities[`.nmp-${type}-${color}`] = {
-                    [`--nmp-${type}`]: colors[color]
+                    [`--nmp-${type}-color`]: colors[color]
                 }
             } else {
                 Object.keys(colors[color]).forEach(colorLevel => {
                     neomorphismUtilities[`.nmp-${type}-${color}-${colorLevel}`] = {
-                        [`--nmp-${type}`]: colors[color][colorLevel]
+                        [`--nmp-${type}-color`]: colors[color][colorLevel]
                     }
                 })
             }

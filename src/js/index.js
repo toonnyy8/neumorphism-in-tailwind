@@ -185,7 +185,7 @@ module.exports = ({ addUtilities, variants, theme }) => {
             "--nmp-shadow-blur": "calc(1 * var(--nmp-size))",
         },
 
-        ".nmp -shadow-blur-base": {
+        ".nmp-shadow-blur-base": {
             "--nmp-shadow-blur": "calc(2 * var(--nmp-size))",
         },
 

@@ -122,14 +122,14 @@ module.exports = ({ addComponents, variants, theme }) => {
     })
     Object.keys(blurs).forEach((blur) => {
         neomorphismUtilities[`.-nmp_blur--${blur}`] = {
-            "--nmp-blur-light": blurs[blur]("--nmp-blur-light"),
-            "--nmp-blur-shadow": blurs[blur]("--nmp-blur-shadow")
+            "--nmp-blur-light": blurs[blur]("--nmp-dist-light"),
+            "--nmp-blur-shadow": blurs[blur]("--nmp-dist-shadow")
         }
         neomorphismUtilities[`.-nmp_blur-light--${blur}`] = {
-            "--nmp-blur-light": blurs[blur]("--nmp-blur-light"),
+            "--nmp-blur-light": blurs[blur]("--nmp-dist-light"),
         }
         neomorphismUtilities[`.-nmp_blur-shadow--${blur}`] = {
-            "--nmp-blur-shadow": blurs[blur]("--nmp-blur-shadow"),
+            "--nmp-blur-shadow": blurs[blur]("--nmp-dist-shadow"),
         }
     })
 

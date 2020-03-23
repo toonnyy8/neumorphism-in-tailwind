@@ -28,7 +28,7 @@ module.exports = ({ addComponents, variants, theme }) => {
             "--nmp-light-y": "0",
             "--nmp-shadow-x": "0",
             "--nmp-shadow-y": "0",
-            "-xebkit-filter":
+            "-webkit-filter":
                 `drop-shadow(calc(var(--nmp-shadow-x) * var(--nmp-dist-shadow)) calc(var(--nmp-shadow-y) * var(--nmp-dist-shadow)) var(--nmp-blur-shadow) var(--nmp-color-shadow))
                          drop-shadow(calc(var(--nmp-light-x) * var(--nmp-dist-light)) calc(var(--nmp-light-y) * var(--nmp-dist-light)) var(--nmp-blur-light) var(--nmp-color-light))`,
             "filter":
@@ -46,7 +46,7 @@ module.exports = ({ addComponents, variants, theme }) => {
             "--nmp-light-y": "0",
             "--nmp-shadow-x": "0",
             "--nmp-shadow-y": "0",
-            "box-shadow":
+            "text-shadow":
                 `calc(var(--nmp-shadow-x) * var(--nmp-dist-shadow)) calc(var(--nmp-shadow-y) * var(--nmp-dist-shadow)) var(--nmp-blur-shadow) var(--nmp-color-shadow),
                          calc(var(--nmp-light-x) * var(--nmp-dist-light)) calc(var(--nmp-light-y) * var(--nmp-dist-light)) var(--nmp-blur-light) var(--nmp-color-light)`,
         },

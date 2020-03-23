@@ -6,8 +6,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "init": "tailwindcss init --full",
-    "build": "tailwindcss build src/css/dev.css -o build/css/neomorphism.css",
-    "build:test": "tailwindcss build src/css/test.css -o build/css/test.css"
+    "build": "tailwindcss build src/css/dev.css -o build/css/neomorphism.css"
   },
   "repository": {
     "type": "git",

@@ -63,13 +63,13 @@ module.exports = ({ addComponents, variants, theme }) => {
 
     let sources = {
         "l": 0,
-        "lt": Math.PI * (1 / 8),
-        "t": Math.PI * (2 / 8),
-        "rt": Math.PI * (3 / 8),
-        "r": Math.PI * (4 / 8),
-        "rb": Math.PI * (5 / 8),
-        "b": Math.PI * (6 / 8),
-        "lb": Math.PI * (7 / 8),
+        "lt": Math.PI * (1 / 4),
+        "t": Math.PI * (1 / 2),
+        "rt": Math.PI * (3 / 4),
+        "r": Math.PI,
+        "rb": Math.PI * (5 / 4),
+        "b": Math.PI * (3 / 2),
+        "lb": Math.PI * (7 / 4),
     }
     Object.keys(userDefined.sources).forEach((source) => {
         sources[source] = userDefined.sources[source]

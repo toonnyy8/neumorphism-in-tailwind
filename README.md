@@ -105,13 +105,12 @@ module.exports = {
 
 ```html
 <div class="_nmp_ -nmp_src--lt -nmp_light--pink-700 -nmp_shadow--black -nmp_dist--xs active:-nmp_shape--inner">
-    <!-- 使用 _nmp_ 函數 -->
-    <!-- -nmp_src--lt : 光線從左上方照過來 -->
-    <!-- -nmp_light--pink-700 : 光亮處顏色設定為 pink-700 -->
-    <!-- -nmp_shadow--black : 陰影處顏色設定為 black -->
-    <!-- -nmp_dist--xs : 光影距離設定為 xs -->
-    <!-- active:-nmp_shape--inner : 點擊時設定為 inner -->
-    xs
+    使用 _nmp_ 函數
+    -nmp_src--lt : 光線從左上方照過來
+    -nmp_light--pink-700 : 光亮處顏色設定為 pink-700
+    -nmp_shadow--black : 陰影處顏色設定為 black
+    -nmp_dist--xs : 光影距離設定為 xs
+    active:-nmp_shape--inner : 點擊時設定為 inner
 </div>
 ```
 

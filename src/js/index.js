@@ -1,221 +1,170 @@
 
-module.exports = ({ addUtilities, variants, theme }) => {
+module.exports = ({ addComponents, variants, theme }) => {
     let neomorphismUtilities = {
-        ".neomorphism": {
-            "--nmp-light-color": "rgba(0, 0, 0, 0)",
-            "--nmp-shadow-color": "rgba(0, 0, 0, 0)",
+        "._nmp": {
+            "--nmp-color-light": "rgba(0, 0, 0, 0)",
+            "--nmp-color-shadow": "rgba(0, 0, 0, 0)",
             "--nmp-inner": "",
-            "--nmp-size": "0px",
-            "--nmp-light-blur": "calc(2 * var(--nmp-size))",
-            "--nmp-shadow-blur": "calc(2 * var(--nmp-size))",
-            "--nmp-light-w": "0",
-            "--nmp-light-h": "0",
-            "--nmp-shadow-w": "0",
-            "--nmp-shadow-h": "0",
+            "--nmp-dist-light": "0px",
+            "--nmp-dist-shadow": "0px",
+            "--nmp-blur-light": "calc(2 * var(--nmp-dist-light))",
+            "--nmp-blur-shadow": "calc(2 * var(--nmp-dist-shadow))",
+            "--nmp-light-x": "0",
+            "--nmp-light-y": "0",
+            "--nmp-shadow-x": "0",
+            "--nmp-shadow-y": "0",
             "box-shadow":
-                `var(--nmp-inner) calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow-color),
-                         var(--nmp-inner) calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur) var(--nmp-light-color)`
+                `var(--nmp-inner) calc(var(--nmp-shadow-x) * var(--nmp-dist-shadow)) calc(var(--nmp-shadow-y) * var(--nmp-dist-shadow)) var(--nmp-blur-shadow) var(--nmp-color-shadow),
+                         var(--nmp-inner) calc(var(--nmp-light-x) * var(--nmp-dist-light)) calc(var(--nmp-light-y) * var(--nmp-dist-light)) var(--nmp-blur-light) var(--nmp-color-light)`
         },
-        ".neomorphism-drop": {
-            "--nmp-light-color": "rgba(0, 0, 0, 0)",
-            "--nmp-shadow-color": "rgba(0, 0, 0, 0)",
-            "--nmp-size": "0px",
-            "--nmp-light-blur": "calc(2 * var(--nmp-size))",
-            "--nmp-shadow-blur": "calc(2 * var(--nmp-size))",
-            "--nmp-light-w": "0",
-            "--nmp-light-h": "0",
-            "--nmp-shadow-w": "0",
-            "--nmp-shadow-h": "0",
-            "-webkit-filter":
-                `drop-shadow(calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow-color))
-                         drop-shadow(calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur) var(--nmp-light-color))`,
+        "._nmp-drop": {
+            "--nmp-color-light": "rgba(0, 0, 0, 0)",
+            "--nmp-color-shadow": "rgba(0, 0, 0, 0)",
+            "--nmp-dist-light": "0px",
+            "--nmp-dist-shadow": "0px",
+            "--nmp-blur-light": "calc(2 * var(--nmp-dist-light))",
+            "--nmp-blur-shadow": "calc(2 * var(--nmp-dist-shadow))",
+            "--nmp-light-x": "0",
+            "--nmp-light-y": "0",
+            "--nmp-shadow-x": "0",
+            "--nmp-shadow-y": "0",
+            "-xebkit-filter":
+                `drop-shadow(calc(var(--nmp-shadow-x) * var(--nmp-dist-shadow)) calc(var(--nmp-shadow-y) * var(--nmp-dist-shadow)) var(--nmp-blur-shadow) var(--nmp-color-shadow))
+                         drop-shadow(calc(var(--nmp-light-x) * var(--nmp-dist-light)) calc(var(--nmp-light-y) * var(--nmp-dist-light)) var(--nmp-blur-light) var(--nmp-color-light))`,
             "filter":
-                `drop-shadow(calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow-color))
-                         drop-shadow(calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur) var(--nmp-light-color))`,
+                `drop-shadow(calc(var(--nmp-shadow-x) * var(--nmp-dist-shadow)) calc(var(--nmp-shadow-y) * var(--nmp-dist-shadow)) var(--nmp-blur-shadow) var(--nmp-color-shadow))
+                         drop-shadow(calc(var(--nmp-light-x) * var(--nmp-dist-light)) calc(var(--nmp-light-y) * var(--nmp-dist-light)) var(--nmp-blur-light) var(--nmp-color-light))`,
         },
-        ".neomorphism-text": {
-            "--nmp-light-color": "rgba(0, 0, 0, 0)",
-            "--nmp-shadow-color": "rgba(0, 0, 0, 0)",
-            "--nmp-size": "0px",
-            "--nmp-light-blur": "calc(2 * var(--nmp-size))",
-            "--nmp-shadow-blur": "calc(2 * var(--nmp-size))",
-            "--nmp-light-w": "0",
-            "--nmp-light-h": "0",
-            "--nmp-shadow-w": "0",
-            "--nmp-shadow-h": "0",
+        "._nmp-text": {
+            "--nmp-color-light": "rgba(0, 0, 0, 0)",
+            "--nmp-color-shadow": "rgba(0, 0, 0, 0)",
+            "--nmp-dist-light": "0px",
+            "--nmp-dist-shadow": "0px",
+            "--nmp-blur-light": "calc(2 * var(--nmp-dist-light))",
+            "--nmp-blur-shadow": "calc(2 * var(--nmp-dist-shadow))",
+            "--nmp-light-x": "0",
+            "--nmp-light-y": "0",
+            "--nmp-shadow-x": "0",
+            "--nmp-shadow-y": "0",
             "box-shadow":
-                `calc(var(--nmp-shadow-w) * var(--nmp-size)) calc(var(--nmp-shadow-h) * var(--nmp-size)) var(--nmp-shadow-blur) var(--nmp-shadow-color),
-                         calc(var(--nmp-light-w) * var(--nmp-size)) calc(var(--nmp-light-h) * var(--nmp-size)) var(--nmp-light-blur) var(--nmp-light-color)`,
+                `calc(var(--nmp-shadow-x) * var(--nmp-dist-shadow)) calc(var(--nmp-shadow-y) * var(--nmp-dist-shadow)) var(--nmp-blur-shadow) var(--nmp-color-shadow),
+                         calc(var(--nmp-light-x) * var(--nmp-dist-light)) calc(var(--nmp-light-y) * var(--nmp-dist-light)) var(--nmp-blur-light) var(--nmp-color-light)`,
         },
 
-        ".nmp-l": {
-            "--nmp-light-w": "-1",
-            "--nmp-light-h": "0",
-            "--nmp-shadow-w": "1",
-            "--nmp-shadow-h": "0",
-        },
-        ".nmp-r": {
-            "--nmp-light-w": "1",
-            "--nmp-light-h": "0",
-            "--nmp-shadow-w": "-1",
-            "--nmp-shadow-h": "0",
-        },
-
-        ".nmp-t": {
-            "--nmp-light-w": "0",
-            "--nmp-light-h": "-1",
-            "--nmp-shadow-w": "0",
-            "--nmp-shadow-h": "1",
-        },
-
-        ".nmp-b": {
-            "--nmp-light-w": "0",
-            "--nmp-light-h": "1",
-            "--nmp-shadow-w": "0",
-            "--nmp-shadow-h": "-1",
-        },
-
-        ".nmp-lt": {
-            "--nmp-light-w": "-1",
-            "--nmp-light-h": "-1",
-            "--nmp-shadow-w": "1",
-            "--nmp-shadow-h": "1",
-        },
-        ".nmp-rb": {
-            "--nmp-light-w": "1",
-            "--nmp-light-h": "1",
-            "--nmp-shadow-w": "-1",
-            "--nmp-shadow-h": "-1",
-        },
-
-        ".nmp-rt": {
-            "--nmp-light-w": "1",
-            "--nmp-light-h": "-1",
-            "--nmp-shadow-w": "-1",
-            "--nmp-shadow-h": "1",
-        },
-
-        ".nmp-lb": {
-            "--nmp-light-w": "-1",
-            "--nmp-light-h": "1",
-            "--nmp-shadow-w": "1",
-            "--nmp-shadow-h": "-1",
-        },
-
-        ".nmp-inner": {
-            "--nmp-inner": "inset",
-        },
-
-        ".nmp-outer": {
+        ".-nmp_shape--outer": {
             "--nmp-inner": "",
         },
-
-        ".nmp-xs": {
-            "--nmp-size": "3px",
-        },
-
-        ".nmp-sm": {
-            "--nmp-size": "7px",
-        },
-
-        ".nmp-base": {
-            "--nmp-size": "11px",
-        },
-
-        ".nmp-md": {
-            "--nmp-size": "15px",
-        },
-
-        ".nmp-lg": {
-            "--nmp-size": "20px",
-        },
-
-        ".nmp-xl": {
-            "--nmp-size": "25px",
-        },
-
-        ".nmp-2xl": {
-            "--nmp-size": "30px",
-        },
-
-        ".nmp-3xl": {
-            "--nmp-size": "35px",
-        },
-
-        ".nmp-4xl": {
-            "--nmp-size": "40px",
-        },
-
-        ".nmp-5xl": {
-            "--nmp-size": "45px",
-        },
-
-        ".nmp-6xl": {
-            "--nmp-size": "50px",
-        },
-
-        ".nmp-blur-sm": {
-            "--nmp-light-blur": "calc(1 * var(--nmp-size))",
-            "--nmp-shadow-blur": "calc(1 * var(--nmp-size))",
-        },
-
-        ".nmp-blur-base": {
-            "--nmp-light-blur": "calc(2 * var(--nmp-size))",
-            "--nmp-shadow-blur": "calc(2 * var(--nmp-size))",
-        },
-
-        ".nmp-blur-md": {
-            "--nmp-light-blur": "calc(3 * var(--nmp-size))",
-            "--nmp-shadow-blur": "calc(3 * var(--nmp-size))",
-        },
-
-        ".nmp-light-blur-sm": {
-            "--nmp-light-blur": "calc(1 * var(--nmp-size))",
-        },
-
-        ".nmp-light-blur-base": {
-            "--nmp-light-blur": "calc(2 * var(--nmp-size))",
-        },
-
-        ".nmp-light-blur-md": {
-            "--nmp-light-blur": "calc(3 * var(--nmp-size))",
-        },
-
-        ".nmp-shadow-blur-sm": {
-            "--nmp-shadow-blur": "calc(1 * var(--nmp-size))",
-        },
-
-        ".nmp-shadow-blur-base": {
-            "--nmp-shadow-blur": "calc(2 * var(--nmp-size))",
-        },
-
-        ".nmp-shadow-blur-md": {
-            "--nmp-shadow-blur": "calc(3 * var(--nmp-size))",
-        },
+        ".-nmp_shape--inner": {
+            "--nmp-inner": "inset",
+        }
     }
 
-    const colors = theme("colors", {});
+    let userDefined = theme("neomorphism", {})
 
-    (["light", "shadow"]).forEach(type => {
-        Object.keys(colors).forEach(color => {
-            if (typeof colors[color] == "string") {
-                neomorphismUtilities[`.nmp-${type}-${color}`] = {
-                    [`--nmp-${type}-color`]: colors[color]
-                }
-            } else {
-                Object.keys(colors[color]).forEach(colorLevel => {
-                    neomorphismUtilities[`.nmp-${type}-${color}-${colorLevel}`] = {
-                        [`--nmp-${type}-color`]: colors[color][colorLevel]
-                    }
-                })
-            }
-        })
+    let sources = {
+        "l": 0,
+        "lt": Math.PI * (1 / 8),
+        "t": Math.PI * (2 / 8),
+        "rt": Math.PI * (3 / 8),
+        "r": Math.PI * (4 / 8),
+        "rb": Math.PI * (5 / 8),
+        "b": Math.PI * (6 / 8),
+        "lb": Math.PI * (7 / 8),
+    }
+    Object.keys(userDefined.sources).forEach((source) => {
+        sources[source] = userDefined.sources[source]
+    })
+    Object.keys(sources).forEach((source) => {
+        neomorphismUtilities[`.-nmp_src--${source}`] = {
+            "--nmp-light-x": `${-Math.cos(sources[source])}`,
+            "--nmp-light-y": `${-Math.sin(sources[source])}`,
+            "--nmp-shadow-x": `${Math.cos(sources[source])}`,
+            "--nmp-shadow-y": `${Math.sin(sources[source])}`,
+        }
     })
 
-    addUtilities(
-        neomorphismUtilities,
+    let distances = {
+        "xs": "3px",
+        "sm": "7px",
+        "base": "11px",
+        "md": "15px",
+        "lg": "20px",
+        "xl": "25px",
+        "2xl": "30px",
+        "3xl": "35px",
+        "4xl": "40px",
+        "5xl": "45px",
+        "6xl": "50px"
+    }
+    Object.keys(userDefined.distances).forEach((distance) => {
+        distances[distance] = userDefined.distances[distance]
+    })
+    Object.keys(distances).forEach((distance) => {
+        neomorphismUtilities[`.-nmp_dist--${distance}`] = {
+            "--nmp-dist-light": distances[distance],
+            "--nmp-dist-shadow": distances[distance]
+        }
+        neomorphismUtilities[`.-nmp_dist-light--${distance}`] = {
+            "--nmp-dist-light": distances[distance],
+        }
+        neomorphismUtilities[`.-nmp_dist-shadow--${distance}`] = {
+            "--nmp-dist-shadow": distances[distance],
+        }
+    })
+
+    let blurs = {
+        "sm": (value) => `calc(1 * var(${value}))`,
+        "base": (value) => `calc(2 * var(${value}))`,
+        "md": (value) => `calc(3 * var(${value}))`
+    }
+    Object.keys(userDefined.blurs).forEach((blur) => {
+        blurs[blur] = userDefined.blurs[blur]
+    })
+    Object.keys(blurs).forEach((blur) => {
+        neomorphismUtilities[`.-nmp_blur--${blur}`] = {
+            "--nmp-blur-light": blurs[blur]("--nmp-blur-light"),
+            "--nmp-blur-shadow": blurs[blur]("--nmp-blur-shadow")
+        }
+        neomorphismUtilities[`.-nmp_blur-light--${blur}`] = {
+            "--nmp-blur-light": blurs[blur]("--nmp-blur-light"),
+        }
+        neomorphismUtilities[`.-nmp_blur-shadow--${blur}`] = {
+            "--nmp-blur-shadow": blurs[blur]("--nmp-blur-shadow"),
+        }
+    })
+
+    let colors = theme("colors", {});
+    Object.keys(colors).forEach(color => {
+        if (typeof colors[color] == "string") {
+            neomorphismUtilities[`.-nmp_color--${color}`] = {
+                "--nmp-color-light": colors[color],
+                "--nmp-color-shadow": colors[color]
+            }
+            neomorphismUtilities[`.-nmp_light--${color}`] = {
+                "--nmp-color-light": colors[color]
+            }
+            neomorphismUtilities[`.-nmp_shadow--${color}`] = {
+                "--nmp-color-shadow": colors[color]
+            }
+        } else {
+            Object.keys(colors[color]).forEach(colorLevel => {
+                neomorphismUtilities[`.-nmp_color--${color}-${colorLevel}`] = {
+                    "--nmp-color-light": colors[color][colorLevel],
+                    "--nmp-color-shadow": colors[color][colorLevel]
+                }
+                neomorphismUtilities[`.-nmp_light--${color}-${colorLevel}`] = {
+                    "--nmp-color-light": colors[color][colorLevel]
+                }
+                neomorphismUtilities[`.-nmp_shadow--${color}-${colorLevel}`] = {
+                    "--nmp-color-shadow": colors[color][colorLevel]
+                }
+            })
+        }
+    })
+
+    addComponents(
         {
-            variants: variants("neomorphism") || ['responsive', 'hover', 'focus', 'active']
+            [`@variants ${[variants("neomorphism") || ['responsive', 'hover', 'focus', 'active']]}`]: neomorphismUtilities
         }
     )
 }

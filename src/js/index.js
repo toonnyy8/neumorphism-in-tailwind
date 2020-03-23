@@ -1,7 +1,7 @@
 
 module.exports = ({ addComponents, variants, theme }) => {
     let neomorphismUtilities = {
-        "._nmp": {
+        "._nmp_": {
             "--nmp-color-light": "rgba(0, 0, 0, 0)",
             "--nmp-color-shadow": "rgba(0, 0, 0, 0)",
             "--nmp-inner": "",
@@ -17,7 +17,7 @@ module.exports = ({ addComponents, variants, theme }) => {
                 `var(--nmp-inner) calc(var(--nmp-shadow-x) * var(--nmp-dist-shadow)) calc(var(--nmp-shadow-y) * var(--nmp-dist-shadow)) var(--nmp-blur-shadow) var(--nmp-color-shadow),
                          var(--nmp-inner) calc(var(--nmp-light-x) * var(--nmp-dist-light)) calc(var(--nmp-light-y) * var(--nmp-dist-light)) var(--nmp-blur-light) var(--nmp-color-light)`
         },
-        "._nmp-drop": {
+        "._nmp_drop": {
             "--nmp-color-light": "rgba(0, 0, 0, 0)",
             "--nmp-color-shadow": "rgba(0, 0, 0, 0)",
             "--nmp-dist-light": "0px",
@@ -35,7 +35,7 @@ module.exports = ({ addComponents, variants, theme }) => {
                 `drop-shadow(calc(var(--nmp-shadow-x) * var(--nmp-dist-shadow)) calc(var(--nmp-shadow-y) * var(--nmp-dist-shadow)) var(--nmp-blur-shadow) var(--nmp-color-shadow))
                          drop-shadow(calc(var(--nmp-light-x) * var(--nmp-dist-light)) calc(var(--nmp-light-y) * var(--nmp-dist-light)) var(--nmp-blur-light) var(--nmp-color-light))`,
         },
-        "._nmp-text": {
+        "._nmp_text": {
             "--nmp-color-light": "rgba(0, 0, 0, 0)",
             "--nmp-color-shadow": "rgba(0, 0, 0, 0)",
             "--nmp-dist-light": "0px",

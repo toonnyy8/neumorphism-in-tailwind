@@ -1,6 +1,6 @@
 
 module.exports = ({ addComponents, variants, theme }) => {
-    let neomorphismUtilities = {
+    let neumorphismUtilities = {
         "._nmp_": {
             "--nmp-color-light": "rgba(0, 0, 0, 0)",
             "--nmp-color-shadow": "rgba(0, 0, 0, 0)",
@@ -59,7 +59,7 @@ module.exports = ({ addComponents, variants, theme }) => {
         }
     }
 
-    let userDefined = theme("neomorphism", {})
+    let userDefined = theme("neumorphism", {})
 
     let sources = {
         "l": 0,
@@ -75,7 +75,7 @@ module.exports = ({ addComponents, variants, theme }) => {
         sources[source] = userDefined.sources[source]
     })
     Object.keys(sources).forEach((source) => {
-        neomorphismUtilities[`.-nmp_src--${source}`] = {
+        neumorphismUtilities[`.-nmp_src--${source}`] = {
             "--nmp-light-x": `${-Math.cos(sources[source])}`,
             "--nmp-light-y": `${-Math.sin(sources[source])}`,
             "--nmp-shadow-x": `${Math.cos(sources[source])}`,
@@ -100,14 +100,14 @@ module.exports = ({ addComponents, variants, theme }) => {
         distances[distance] = userDefined.distances[distance]
     })
     Object.keys(distances).forEach((distance) => {
-        neomorphismUtilities[`.-nmp_dist--${distance}`] = {
+        neumorphismUtilities[`.-nmp_dist--${distance}`] = {
             "--nmp-dist-light": distances[distance],
             "--nmp-dist-shadow": distances[distance]
         }
-        neomorphismUtilities[`.-nmp_dist-light--${distance}`] = {
+        neumorphismUtilities[`.-nmp_dist-light--${distance}`] = {
             "--nmp-dist-light": distances[distance],
         }
-        neomorphismUtilities[`.-nmp_dist-shadow--${distance}`] = {
+        neumorphismUtilities[`.-nmp_dist-shadow--${distance}`] = {
             "--nmp-dist-shadow": distances[distance],
         }
     })
@@ -121,14 +121,14 @@ module.exports = ({ addComponents, variants, theme }) => {
         blurs[blur] = userDefined.blurs[blur]
     })
     Object.keys(blurs).forEach((blur) => {
-        neomorphismUtilities[`.-nmp_blur--${blur}`] = {
+        neumorphismUtilities[`.-nmp_blur--${blur}`] = {
             "--nmp-blur-light": blurs[blur]("--nmp-dist-light"),
             "--nmp-blur-shadow": blurs[blur]("--nmp-dist-shadow")
         }
-        neomorphismUtilities[`.-nmp_blur-light--${blur}`] = {
+        neumorphismUtilities[`.-nmp_blur-light--${blur}`] = {
             "--nmp-blur-light": blurs[blur]("--nmp-dist-light"),
         }
-        neomorphismUtilities[`.-nmp_blur-shadow--${blur}`] = {
+        neumorphismUtilities[`.-nmp_blur-shadow--${blur}`] = {
             "--nmp-blur-shadow": blurs[blur]("--nmp-dist-shadow"),
         }
     })
@@ -136,26 +136,26 @@ module.exports = ({ addComponents, variants, theme }) => {
     let colors = theme("colors", {});
     Object.keys(colors).forEach(color => {
         if (typeof colors[color] == "string") {
-            neomorphismUtilities[`.-nmp_color--${color}`] = {
+            neumorphismUtilities[`.-nmp_color--${color}`] = {
                 "--nmp-color-light": colors[color],
                 "--nmp-color-shadow": colors[color]
             }
-            neomorphismUtilities[`.-nmp_light--${color}`] = {
+            neumorphismUtilities[`.-nmp_light--${color}`] = {
                 "--nmp-color-light": colors[color]
             }
-            neomorphismUtilities[`.-nmp_shadow--${color}`] = {
+            neumorphismUtilities[`.-nmp_shadow--${color}`] = {
                 "--nmp-color-shadow": colors[color]
             }
         } else {
             Object.keys(colors[color]).forEach(colorLevel => {
-                neomorphismUtilities[`.-nmp_color--${color}-${colorLevel}`] = {
+                neumorphismUtilities[`.-nmp_color--${color}-${colorLevel}`] = {
                     "--nmp-color-light": colors[color][colorLevel],
                     "--nmp-color-shadow": colors[color][colorLevel]
                 }
-                neomorphismUtilities[`.-nmp_light--${color}-${colorLevel}`] = {
+                neumorphismUtilities[`.-nmp_light--${color}-${colorLevel}`] = {
                     "--nmp-color-light": colors[color][colorLevel]
                 }
-                neomorphismUtilities[`.-nmp_shadow--${color}-${colorLevel}`] = {
+                neumorphismUtilities[`.-nmp_shadow--${color}-${colorLevel}`] = {
                     "--nmp-color-shadow": colors[color][colorLevel]
                 }
             })
@@ -164,7 +164,7 @@ module.exports = ({ addComponents, variants, theme }) => {
 
     addComponents(
         {
-            [`@variants ${[variants("neomorphism") || ['responsive', 'hover', 'focus', 'active']]}`]: neomorphismUtilities
+            [`@variants ${[variants("neumorphism") || ['responsive', 'hover', 'focus', 'active']]}`]: neumorphismUtilities
         }
     )
 }

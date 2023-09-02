@@ -1,8 +1,8 @@
-# neomorphism-in-tailwind
+# neumorphism-in-tailwind
 
 ## Install
 ```bash
-npm install --save-dev neomorphism-in-tailwind
+npm install --save-dev neumorphism-in-tailwind
 ```
 
 ## Usage
@@ -13,7 +13,7 @@ module.exports = {
 	theme: {
 		/* ... */
 		colors: { /* colors */ },
-		neomorphism: {
+		neumorphism: {
 			sources: {
 				"l": 0,
 				"lt": Math.PI * (1 / 4),
@@ -48,11 +48,11 @@ module.exports = {
 	variants: { 
 		/* ... */
 		/* all the following default to ['responsive', 'hover', 'focus', 'active'] */
-		neomorphism: ['responsive', 'hover', 'focus', 'active'],
+		neumorphism: ['responsive', 'hover', 'focus', 'active'],
 	},
 
 	plugins: [
-		require('neomorphism-in-tailwind')
+		require('neumorphism-in-tailwind')
 	],
 }
 ```
@@ -101,7 +101,7 @@ module.exports = {
 >> 預設為 base
 ---
 
-[範例](https://toonnyy8.github.io/neomorphism-in-tailwind/)
+[範例](https://toonnyy8.github.io/neumorphism-in-tailwind/)
 
 ```html
 <div class="_nmp_ -nmp_src--lt -nmp_light--pink-700 -nmp_shadow--black -nmp_dist--xs active:-nmp_shape--inner">

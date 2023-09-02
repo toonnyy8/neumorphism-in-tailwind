@@ -3,7 +3,7 @@ module.exports = {
     important: false,
     separator: ':',
     theme: {
-        neomorphism: {
+        neumorphism: {
             sources: {
                 "l": 0,
                 "lt": Math.PI * (1 / 4),
@@ -718,7 +718,7 @@ module.exports = {
         transitionProperty: ['responsive'],
         transitionTimingFunction: ['responsive'],
         transitionDuration: ['responsive'],
-        neomorphism: ['responsive', 'hover', 'focus', 'active']
+        neumorphism: ['responsive', 'hover', 'focus', 'active']
     },
     corePlugins: {},
     plugins: [require("./src/js/index.js")],
